@@ -71,7 +71,7 @@ const bereiche: Bereich[] = [
         text: 'Verantwortet Entwicklungspfade, Feedbackzyklen und das Weiterbildungsbudget jedes Teammitglieds — vom Werkstudenten bis zur Bereichsleitung.',
       },
       {
-        name: 'Jonas Wiegand',
+        name: 'Christian Wiegand',
         role: 'Recruiting & Employer Branding',
         focus: 'Hiring, Onboarding, Community',
         text: 'Führt Bewerbungsgespräche, begleitet das Onboarding der ersten 90 Tage und organisiert unsere internen MDD-Sessions.',
