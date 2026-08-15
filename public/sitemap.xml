@@ -5,15 +5,15 @@
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://codebricks.gmbh/beratung</loc>
+    <loc>https://codebricks.gmbh/plattform</loc>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://codebricks.gmbh/softwareentwicklung</loc>
+    <loc>https://codebricks.gmbh/modellgetriebene-entwicklung</loc>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://codebricks.gmbh/systemintegration</loc>
+    <loc>https://codebricks.gmbh/services</loc>
     <priority>0.8</priority>
   </url>
   <url>
