@@ -14,7 +14,7 @@ const Datenschutz = () => (
     />
     <PageHero title="Datenschutzerklärung" breadcrumb={[{ label: 'Start', href: '/' }, { label: 'Datenschutz' }]} />
     <section className="bg-[#FAFBFC]">
-      <div className="mx-auto max-w-3xl px-6 py-16 text-sm leading-relaxed text-[#0F1B3D] space-y-4">
+      <div className="tile mx-auto max-w-3xl px-6 pb-16 lg:pb-24 text-sm leading-relaxed text-[#0F1B3D] space-y-4">
         <p>
           Wir freuen uns über Ihr Interesse an der Codebricks GmbH. Der Schutz Ihrer personenbezogenen Daten ist uns ein
           zentrales Anliegen. Nachfolgend informieren wir Sie über die Verarbeitung Ihrer Daten beim Besuch dieser Website.

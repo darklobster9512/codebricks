@@ -42,9 +42,9 @@ const Services = () => (
     />
 
     <Section index="01" eyebrow="Leistungen" title="Sechs Bausteine rund um das Framework.">
-      <div className="grid gap-x-14 gap-y-12 md:grid-cols-2 lg:grid-cols-3">
+      <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
         {leistungen.map(([t, d]) => (
-          <div key={t}>
+          <div key={t} className="tile tile-hover p-7">
             <h3 className="text-lg font-semibold text-[#0F1B3D]">{t}</h3>
             <p className="mt-3 text-sm leading-relaxed text-[#64748B]">{d}</p>
           </div>
@@ -79,9 +79,9 @@ const Services = () => (
     />
 
     <Section index="03" eyebrow="Lizenzmodelle" title="Drei Modelle, transparent kalkulierbar.">
-      <div className="grid gap-6 md:grid-cols-3">
+      <div className="grid gap-4 md:grid-cols-3">
         {lizenzen.map(([t, d, hinweis]) => (
-          <div key={t} className="flex flex-col tile p-8">
+          <div key={t} className="tile tile-hover flex flex-col p-8">
             <h3 className="text-xl font-semibold text-[#0F1B3D]">{t}</h3>
             <p className="mt-3 flex-1 text-sm leading-relaxed text-[#64748B]">{d}</p>
             <p className="mt-6 border-t border-[#E8ECF1] pt-4 font-mono text-xs text-[#3B82F6]">{hinweis}</p>
@@ -112,9 +112,9 @@ const Services = () => (
     />
 
     <Section index="05" eyebrow="Service-Level" title="Was wir vertraglich zusagen." bg="muted">
-      <div className="grid gap-6 md:grid-cols-3">
+      <div className="grid gap-4 md:grid-cols-3">
         {sla.map(([label, wert, detail]) => (
-          <div key={label} className="tile p-6">
+          <div key={label} className="tile tile-hover p-6">
             <p className="text-[11px] font-mono uppercase tracking-widest text-[#64748B]">{label}</p>
             <p className="mt-4 font-mono text-2xl text-[#0F1B3D]">{wert}</p>
             <p className="mt-2 text-sm leading-relaxed text-[#64748B]">{detail}</p>
