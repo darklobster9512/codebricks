@@ -25,8 +25,9 @@ const faqs = [
 const Plattform = () => (
   <>
     <SEO
-      title="Plattform | Codebricks GmbH"
-      description="Das Codebricks-Framework: Metamodell, Modell-Editor, Generatoren und Laufzeitbibliotheken für die modellgetriebene Softwareentwicklung."
+      title="Codebricks Framework – Modell, Generator, Laufzeit"
+      description="Metamodell, Modell-Editor, Generatoren und Laufzeitbibliotheken: die Plattform, aus der Ihre Anwendungen reproduzierbar entstehen."
+      brand={false}
       path="/plattform"
     />
     <PageHero
