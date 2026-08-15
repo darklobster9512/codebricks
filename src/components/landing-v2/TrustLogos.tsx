@@ -53,7 +53,7 @@ const ProjectTypesMarquee = () => {
             {track.map(({ icon: Icon, label }, i) => (
               <div
                 key={`${label}-${i}`}
-                className="flex h-14 shrink-0 items-center gap-3 rounded-md border border-border bg-background/60 px-5"
+                className="flex h-14 shrink-0 items-center gap-3 rounded-xl border border-border bg-background/60 px-5"
                 aria-hidden={i >= projectTypes.length ? 'true' : undefined}
               >
                 <Icon className="h-5 w-5 text-primary shrink-0" aria-hidden="true" />

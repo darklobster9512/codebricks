@@ -34,29 +34,29 @@ const SplitSection = ({
 }: SplitSectionProps) => (
   <section
     id={id}
-    className={`border-t border-[#E6ECF5] ${bg === 'muted' ? 'bg-[#F7F9FC]' : 'bg-white'}`}
+    className={`border-t border-[#E8ECF1] ${bg === 'muted' ? 'bg-[#FAFBFC]' : 'bg-white'}`}
   >
     <div className="mx-auto max-w-7xl px-6 py-20 lg:py-28">
       <div className="grid items-center gap-12 lg:grid-cols-2 lg:gap-16">
         <div className={imageSide === 'left' ? 'lg:order-2' : ''}>
           {(index || eyebrow) && (
-            <p className="text-[11px] font-mono uppercase tracking-widest text-[#5B6B85]">
-              {index && <span className="text-[#2563EB]">{index}</span>}
+            <p className="text-[11px] font-mono uppercase tracking-widest text-[#64748B]">
+              {index && <span className="text-[#3B82F6]">{index}</span>}
               {index && eyebrow && <span className="mx-2">—</span>}
               {eyebrow}
             </p>
           )}
-          <h2 className="mt-5 text-3xl md:text-4xl font-semibold tracking-tight leading-[1.15] text-[#0B1220]">
+          <h2 className="mt-5 text-3xl md:text-4xl font-semibold tracking-tight leading-[1.15] text-[#0F1B3D]">
             {title}
           </h2>
           {body && (
-            <div className="mt-5 space-y-4 text-base leading-relaxed text-[#5B6B85]">{body}</div>
+            <div className="mt-5 space-y-4 text-base leading-relaxed text-[#64748B]">{body}</div>
           )}
           {bullets && (
             <ul className="mt-7 space-y-3">
               {bullets.map((b) => (
-                <li key={b} className="flex gap-3 text-sm leading-relaxed text-[#0B1220]">
-                  <Check size={16} className="mt-0.5 shrink-0 text-[#2563EB]" />
+                <li key={b} className="flex gap-3 text-sm leading-relaxed text-[#0F1B3D]">
+                  <Check size={16} className="mt-0.5 shrink-0 text-[#3B82F6]" />
                   <span>{b}</span>
                 </li>
               ))}
@@ -65,7 +65,7 @@ const SplitSection = ({
           {linkTo && linkLabel && (
             <Link
               to={linkTo}
-              className="mt-8 inline-flex items-center gap-1.5 text-sm font-medium text-[#2563EB] hover:text-[#1E3A8A]"
+              className="mt-8 inline-flex items-center gap-1.5 text-sm font-medium text-[#3B82F6] hover:text-[#1D4ED8]"
             >
               {linkLabel} <ArrowRight size={14} />
             </Link>
@@ -73,7 +73,7 @@ const SplitSection = ({
         </div>
 
         <div className={imageSide === 'left' ? 'lg:order-1' : ''}>
-          <div className="border border-[#E6ECF5] bg-white p-2">
+          <div className="border border-[#E8ECF1] bg-white p-2">
             <img
               src={image}
               alt={imageAlt}

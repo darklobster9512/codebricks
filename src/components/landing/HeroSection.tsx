@@ -25,8 +25,8 @@ const tabContent: Record<string, {
         <div className="flex items-center justify-between mb-3">
           <div className="text-[10px] font-medium text-muted-foreground uppercase tracking-wider">Monatsübersicht</div>
           <div className="flex gap-1.5">
-            <div className="h-5 px-2 rounded-md bg-muted text-[9px] flex items-center text-muted-foreground">Woche</div>
-            <div className="h-5 px-2 rounded-md bg-primary/10 text-[9px] flex items-center text-primary font-medium">Monat</div>
+            <div className="h-5 px-2 rounded-xl bg-muted text-[9px] flex items-center text-muted-foreground">Woche</div>
+            <div className="h-5 px-2 rounded-xl bg-primary/10 text-[9px] flex items-center text-primary font-medium">Monat</div>
           </div>
         </div>
         <div className="flex items-end gap-1.5 h-24">
@@ -202,7 +202,7 @@ const HeroSection = () => {
                 <div className="w-3 h-3 rounded-full bg-[hsl(142_71%_45%/0.6)]" />
               </div>
               <div className="flex-1 mx-4">
-                <div className="h-6 rounded-md bg-background border border-border/50 flex items-center px-3">
+                <div className="h-6 rounded-xl bg-background border border-border/50 flex items-center px-3">
                   <span className="text-xs text-muted-foreground">app.for-tel.solutions/{activeTab}</span>
                 </div>
               </div>

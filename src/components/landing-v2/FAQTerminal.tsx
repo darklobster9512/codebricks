@@ -33,14 +33,14 @@ const FAQTerminal = () => {
               <button
                 key={i}
                 onClick={() => setOpen(isOpen ? null : i)}
-                className="w-full text-left p-5 sm:p-6 rounded-md hover:bg-muted/40 transition-colors border-b border-border last:border-0"
+                className="w-full text-left p-5 sm:p-6 rounded-xl hover:bg-muted/40 transition-colors border-b border-border last:border-0"
               >
                 <div className="flex items-start justify-between gap-6">
                   <div className="flex items-start gap-4">
                     <span className="text-xs text-primary mt-1.5 font-semibold">{String(i + 1).padStart(2, '0')}</span>
                     <h3 className="font-display text-base sm:text-lg font-semibold leading-snug">{f.q}</h3>
                   </div>
-                  <span className={`shrink-0 w-8 h-8 rounded-md border border-border flex items-center justify-center transition-transform ${isOpen ? 'rotate-45 bg-primary text-primary-foreground border-primary' : ''}`}>
+                  <span className={`shrink-0 w-8 h-8 rounded-xl border border-border flex items-center justify-center transition-transform ${isOpen ? 'rotate-45 bg-primary text-primary-foreground border-primary' : ''}`}>
                     <Plus size={15} />
                   </span>
                 </div>

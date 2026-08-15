@@ -217,7 +217,7 @@ const ServicesTabs = () => {
               role="tabpanel"
               id={`service-panel-${active}`}
               aria-labelledby={`service-tab-${active}`}
-              className="border border-border bg-card rounded-md overflow-hidden shadow-sm animate-in fade-in duration-300"
+              className="border border-border bg-card rounded-xl overflow-hidden shadow-sm animate-in fade-in duration-300"
             >
               {/* Mini visual */}
               <div className="relative h-28 sm:h-32 bg-gradient-blue-subtle border-b border-border flex items-center justify-center overflow-hidden">
@@ -231,7 +231,7 @@ const ServicesTabs = () => {
                     }}
                   />
                 </div>
-                <div className="relative w-14 h-14 rounded-md bg-background border border-border flex items-center justify-center shadow-sm">
+                <div className="relative w-14 h-14 rounded-xl bg-background border border-border flex items-center justify-center shadow-sm">
                   <Icon size={24} className="text-primary" strokeWidth={1.75} />
                 </div>
               </div>
@@ -267,7 +267,7 @@ const ServicesTabs = () => {
                   {current.tech.map((t) => (
                     <span
                       key={t}
-                      className="inline-flex items-center px-2.5 py-1 rounded-md border border-border bg-muted/40 text-[11px] font-medium text-muted-foreground tracking-wide"
+                      className="inline-flex items-center px-2.5 py-1 rounded-xl border border-border bg-muted/40 text-[11px] font-medium text-muted-foreground tracking-wide"
                     >
                       {t}
                     </span>

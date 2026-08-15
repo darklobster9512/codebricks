@@ -35,7 +35,7 @@ const BentoFeatures = () => {
               key={it.title}
               className={`group relative p-8 rounded-lg border border-border bg-card hover:border-primary/40 hover:shadow-md transition-all flex flex-col gap-5 min-h-[240px] scroll-hidden delay-${(i % 6) + 1} ${isVisible ? 'scroll-visible' : ''}`}
             >
-              <div className="w-11 h-11 rounded-md bg-primary/10 flex items-center justify-center">
+              <div className="w-11 h-11 rounded-xl bg-primary/10 flex items-center justify-center">
                 <it.icon size={20} className="text-primary" />
               </div>
               <div>

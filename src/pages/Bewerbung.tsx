@@ -85,7 +85,7 @@ const Bewerbung = () => {
         breadcrumb={[{ label: 'Start', href: '/' }, { label: 'Karriere', href: '/karriere' }, { label: 'Bewerbung' }]}
       />
 
-      <section className="border-t border-[#E6ECF5] bg-white">
+      <section className="border-t border-[#E8ECF1] bg-white">
         <div className="mx-auto max-w-3xl px-6 py-16">
           <form onSubmit={handleSubmit} className="space-y-8">
             <div className="grid gap-6 md:grid-cols-2">
@@ -128,15 +128,15 @@ const Bewerbung = () => {
               </Select>
             </div>
 
-            <p className="text-xs text-[#5B6B85]">
+            <p className="text-xs text-[#64748B]">
               Mit dem Absenden erklären Sie sich mit der Verarbeitung Ihrer Daten gemäß unserer{' '}
-              <a href="/datenschutz" className="text-[#2563EB] hover:underline">Datenschutzerklärung</a> einverstanden.
+              <a href="/datenschutz" className="text-[#3B82F6] hover:underline">Datenschutzerklärung</a> einverstanden.
             </p>
 
             <button
               type="submit"
               disabled={submitting}
-              className="inline-flex h-11 items-center gap-2 rounded-md bg-[#2563EB] px-6 text-sm font-medium text-white hover:bg-[#1E3A8A] disabled:opacity-50"
+              className="inline-flex h-11 items-center gap-2 rounded-xl bg-[#3B82F6] px-6 text-sm font-medium text-white hover:bg-[#1D4ED8] disabled:opacity-50"
             >
               {submitting ? <><Loader2 size={16} className="animate-spin" /> Wird gesendet…</> : <>Bewerbung senden <Send size={16} /></>}
             </button>

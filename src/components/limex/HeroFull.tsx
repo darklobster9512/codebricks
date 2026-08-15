@@ -9,7 +9,7 @@ const HeroFull = () => {
   };
 
   return (
-    <section className="relative z-10 isolate overflow-visible bg-[#0B1220]">
+    <section className="relative z-10 isolate overflow-visible bg-[#0F1B3D]">
       <div className="absolute inset-0 overflow-hidden">
         {/* Background image */}
         <img
@@ -24,11 +24,11 @@ const HeroFull = () => {
         {/* Blue gradient overlay */}
         <div
           aria-hidden
-          className="absolute inset-0 bg-gradient-to-b from-[#2563EB]/70 via-[#1E3A8A]/80 to-[#0B1220]/90"
+          className="absolute inset-0 bg-gradient-to-b from-[#3B82F6]/70 via-[#1D4ED8]/80 to-[#0F1B3D]/90"
         />
         <div
           aria-hidden
-          className="absolute inset-0 bg-gradient-to-r from-[#0B1220]/70 via-[#0B1220]/20 to-transparent"
+          className="absolute inset-0 bg-gradient-to-r from-[#0F1B3D]/70 via-[#0F1B3D]/20 to-transparent"
         />
       </div>
 
@@ -56,14 +56,14 @@ const HeroFull = () => {
         <div className="mt-10 flex flex-wrap gap-3">
           <Link
             to="/kontakt"
-            className="inline-flex h-12 items-center gap-2 rounded-md bg-[#2563EB] px-6 text-sm font-medium text-white transition-colors hover:bg-[#1E3A8A]"
+            className="inline-flex h-12 items-center gap-2 rounded-xl bg-[#3B82F6] px-6 text-sm font-medium text-white transition-colors hover:bg-[#1D4ED8]"
           >
             Live-Demo vereinbaren
             <ArrowRight size={16} />
           </Link>
           <Link
             to="/plattform"
-            className="inline-flex h-12 items-center gap-2 rounded-md border border-white/40 bg-white/0 px-6 text-sm font-medium text-white backdrop-blur-sm transition-colors hover:bg-white hover:text-[#0B1220]"
+            className="inline-flex h-12 items-center gap-2 rounded-xl border border-white/40 bg-white/0 px-6 text-sm font-medium text-white backdrop-blur-sm transition-colors hover:bg-white hover:text-[#0F1B3D]"
           >
             Plattform ansehen
           </Link>
@@ -74,68 +74,68 @@ const HeroFull = () => {
       <div className="absolute inset-x-0 bottom-0 z-30 mx-auto max-w-7xl translate-y-1/4 md:translate-y-1/2 px-6">
         <div className="grid gap-4 md:grid-cols-3">
           {/* Festes Projektteam */}
-          <div className="rounded-md border border-[#E6ECF5] bg-white p-6 shadow-sm">
-            <p className="text-[11px] font-semibold uppercase tracking-widest text-[#2563EB]">
+          <div className="rounded-xl border border-[#E8ECF1] bg-white p-6 shadow-sm">
+            <p className="text-[11px] font-semibold uppercase tracking-widest text-[#3B82F6]">
               Produktentwicklung
             </p>
             <div className="mt-5 flex items-center gap-3">
-              <Building2 size={22} className="text-[#0B1220]" strokeWidth={1.75} />
-              <p className="text-2xl font-semibold text-[#0B1220]">Berlin · DE</p>
+              <Building2 size={22} className="text-[#0F1B3D]" strokeWidth={1.75} />
+              <p className="text-2xl font-semibold text-[#0F1B3D]">Berlin · DE</p>
             </div>
-            <p className="mt-2 text-sm text-[#5B6B85]">
+            <p className="mt-2 text-sm text-[#64748B]">
               Framework, Generatoren und Support kommen aus einer Hand — entwickelt
               und gepflegt von unserem Team am Leipziger Platz.
             </p>
             <div className="mt-5 flex flex-wrap gap-2">
-              <span className="rounded-sm bg-[#EFF4FF] px-2 py-1 text-[11px] font-medium text-[#1E3A8A]">
+              <span className="rounded-lg bg-[#EFF6FF] px-2 py-1 text-[11px] font-medium text-[#1D4ED8]">
                 Made in Germany
               </span>
-              <span className="rounded-sm bg-[#EFF4FF] px-2 py-1 text-[11px] font-medium text-[#1E3A8A]">
+              <span className="rounded-lg bg-[#EFF6FF] px-2 py-1 text-[11px] font-medium text-[#1D4ED8]">
                 Hersteller-Support
               </span>
             </div>
           </div>
 
           {/* Einsatz */}
-          <div className="rounded-md border border-[#E6ECF5] bg-white p-6 shadow-sm">
-            <p className="text-[11px] font-semibold uppercase tracking-widest text-[#2563EB]">
+          <div className="rounded-xl border border-[#E8ECF1] bg-white p-6 shadow-sm">
+            <p className="text-[11px] font-semibold uppercase tracking-widest text-[#3B82F6]">
               Im Einsatz
             </p>
             <div className="mt-5 flex items-center gap-3">
-              <Boxes size={22} className="text-[#0B1220]" strokeWidth={1.75} />
-              <p className="text-2xl font-semibold text-[#0B1220]">40+ Modelle</p>
+              <Boxes size={22} className="text-[#0F1B3D]" strokeWidth={1.75} />
+              <p className="text-2xl font-semibold text-[#0F1B3D]">40+ Modelle</p>
             </div>
-            <p className="mt-2 text-sm text-[#5B6B85]">
+            <p className="mt-2 text-sm text-[#64748B]">
               Produktiv generierte Fachdomänen bei Kunden aus Industrie, Finanzwesen
               und öffentlicher Hand.
             </p>
             <div className="mt-5 flex items-center gap-2">
               <div className="flex gap-0.5">
                 {[0, 1, 2, 3, 4].map((i) => (
-                  <Star key={i} size={14} className="fill-[#2563EB] text-[#2563EB]" />
+                  <Star key={i} size={14} className="fill-[#3B82F6] text-[#3B82F6]" />
                 ))}
               </div>
-              <p className="text-sm font-medium text-[#0B1220]">4,8 / 5</p>
-              <p className="text-sm text-[#5B6B85]">Support-Bewertung</p>
+              <p className="text-sm font-medium text-[#0F1B3D]">4,8 / 5</p>
+              <p className="text-sm text-[#64748B]">Support-Bewertung</p>
             </div>
           </div>
 
           {/* Evaluierung */}
-          <div className="group rounded-md border border-[#E6ECF5] bg-white p-6 shadow-sm">
-            <p className="text-[11px] font-semibold uppercase tracking-widest text-[#2563EB]">
+          <div className="group rounded-xl border border-[#E8ECF1] bg-white p-6 shadow-sm">
+            <p className="text-[11px] font-semibold uppercase tracking-widest text-[#3B82F6]">
               Kostenlose Evaluierung
             </p>
             <div className="mt-5 flex items-center gap-3">
-              <LineChart size={22} className="text-[#0B1220]" strokeWidth={1.75} />
-              <p className="text-lg font-semibold text-[#0B1220]">Modell-Piloten</p>
+              <LineChart size={22} className="text-[#0F1B3D]" strokeWidth={1.75} />
+              <p className="text-lg font-semibold text-[#0F1B3D]">Modell-Piloten</p>
             </div>
-            <p className="mt-2 text-sm text-[#5B6B85]">
+            <p className="mt-2 text-sm text-[#64748B]">
               Wir modellieren eine Ihrer Fachdomänen und zeigen den generierten Code —
               unverbindlich, in zwei Wochen.
             </p>
             <Link
               to="/kontakt"
-              className="mt-5 inline-flex items-center gap-1.5 text-sm font-medium text-[#2563EB] hover:text-[#1E3A8A]"
+              className="mt-5 inline-flex items-center gap-1.5 text-sm font-medium text-[#3B82F6] hover:text-[#1D4ED8]"
             >
               Pilot anfragen
               <ArrowRight size={14} className="transition-transform group-hover:translate-x-0.5" />

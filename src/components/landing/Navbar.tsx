@@ -165,7 +165,7 @@ const Navbar = () => {
             <Link
               to="/kontakt"
               onClick={() => setMobileOpen(false)}
-              className="flex items-center justify-center gap-2 w-full px-6 py-3.5 rounded-md bg-primary text-primary-foreground font-semibold"
+              className="flex items-center justify-center gap-2 w-full px-6 py-3.5 rounded-xl bg-primary text-primary-foreground font-semibold"
             >
               Projekt anfragen
               <ArrowRight size={16} />

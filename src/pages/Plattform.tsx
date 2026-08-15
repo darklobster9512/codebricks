@@ -31,17 +31,17 @@ const Plattform = () => (
     />
     <PageHero
       eyebrow="Produkt · Plattform"
-      title={<>Ein Framework, das aus Modellen <span className="text-[#2563EB]">lesbaren Code</span> macht.</>}
+      title={<>Ein Framework, das aus Modellen <span className="text-[#3B82F6]">lesbaren Code</span> macht.</>}
       intro="Codebricks ist kein Baukasten für Klickstrecken, sondern eine Werkzeugkette für Entwicklungsteams: Modell, Generator, Laufzeit — offen, versionierbar und ohne Lock-in."
       breadcrumb={[{ label: 'Start', href: '/' }, { label: 'Plattform' }]}
     />
 
     <Section index="01" eyebrow="Bausteine" title="Fünf Komponenten, eine durchgängige Werkzeugkette.">
-      <div className="divide-y divide-[#E6ECF5] border-y border-[#E6ECF5]">
+      <div className="divide-y divide-[#E8ECF1] border-y border-[#E8ECF1]">
         {bausteine.map(([t, d]) => (
           <div key={t} className="grid gap-6 md:grid-cols-12 py-8">
-            <div className="md:col-span-4 text-lg font-medium text-[#0B1220]">{t}</div>
-            <div className="md:col-span-8 text-sm leading-relaxed text-[#5B6B85]">{d}</div>
+            <div className="md:col-span-4 text-lg font-medium text-[#0F1B3D]">{t}</div>
+            <div className="md:col-span-8 text-sm leading-relaxed text-[#64748B]">{d}</div>
           </div>
         ))}
       </div>
@@ -96,14 +96,14 @@ const Plattform = () => (
     />
 
     <Section index="04" eyebrow="Häufige Fragen" title="Was Entwicklungsleitungen vor der Evaluierung fragen.">
-      <div className="divide-y divide-[#E6ECF5] border-y border-[#E6ECF5]">
+      <div className="divide-y divide-[#E8ECF1] border-y border-[#E8ECF1]">
         {faqs.map(([q, a]) => (
           <details key={q} className="group py-6">
-            <summary className="flex cursor-pointer items-center justify-between text-base font-medium text-[#0B1220]">
+            <summary className="flex cursor-pointer items-center justify-between text-base font-medium text-[#0F1B3D]">
               {q}
-              <ChevronRight size={18} className="text-[#5B6B85] transition-transform group-open:rotate-90" />
+              <ChevronRight size={18} className="text-[#64748B] transition-transform group-open:rotate-90" />
             </summary>
-            <p className="mt-4 max-w-3xl text-sm leading-relaxed text-[#5B6B85]">{a}</p>
+            <p className="mt-4 max-w-3xl text-sm leading-relaxed text-[#64748B]">{a}</p>
           </details>
         ))}
       </div>

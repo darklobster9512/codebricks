@@ -65,12 +65,12 @@ const Start = () => (
       <div className="grid gap-14 md:grid-cols-3">
         {services.map((s) => (
           <div key={s.title} className="flex flex-col">
-            <s.icon size={28} strokeWidth={1.5} className="text-[#2563EB]" />
-            <h3 className="mt-6 text-xl font-semibold tracking-tight text-[#0B1220]">{s.title}</h3>
-            <p className="mt-3 text-sm leading-relaxed text-[#5B6B85]">{s.body}</p>
+            <s.icon size={28} strokeWidth={1.5} className="text-[#3B82F6]" />
+            <h3 className="mt-6 text-xl font-semibold tracking-tight text-[#0F1B3D]">{s.title}</h3>
+            <p className="mt-3 text-sm leading-relaxed text-[#64748B]">{s.body}</p>
             <Link
               to={s.to}
-              className="mt-6 inline-flex items-center gap-1 text-sm font-medium text-[#2563EB] hover:text-[#1E3A8A]"
+              className="mt-6 inline-flex items-center gap-1 text-sm font-medium text-[#3B82F6] hover:text-[#1D4ED8]"
             >
               Mehr erfahren <ArrowRight size={14} />
             </Link>
@@ -132,12 +132,12 @@ const Start = () => (
 
     {/* PRINCIPLES */}
     <Section index="04" eyebrow="Haltung" title="Vier Grundsätze, an denen Sie uns messen können." bg="muted">
-      <div className="divide-y divide-[#E6ECF5] border-y border-[#E6ECF5]">
+      <div className="divide-y divide-[#E8ECF1] border-y border-[#E8ECF1]">
         {principles.map(([n, t, d]) => (
           <div key={n} className="grid gap-6 md:grid-cols-12 py-8">
-            <div className="md:col-span-2 font-mono text-sm text-[#2563EB]">{n}</div>
-            <div className="md:col-span-4 text-lg font-medium text-[#0B1220]">{t}</div>
-            <div className="md:col-span-6 text-sm leading-relaxed text-[#5B6B85]">{d}</div>
+            <div className="md:col-span-2 font-mono text-sm text-[#3B82F6]">{n}</div>
+            <div className="md:col-span-4 text-lg font-medium text-[#0F1B3D]">{t}</div>
+            <div className="md:col-span-6 text-sm leading-relaxed text-[#64748B]">{d}</div>
           </div>
         ))}
       </div>
@@ -147,7 +147,7 @@ const Start = () => (
     <Section index="05" eyebrow="Zielplattformen" title="Generiert wird in die Technologien, die Sie bereits betreiben.">
       <div className="flex flex-wrap gap-x-10 gap-y-6">
         {techs.map((t) => (
-          <span key={t} className="text-lg font-medium tracking-tight text-[#5B6B85] transition-colors hover:text-[#0B1220]">
+          <span key={t} className="text-lg font-medium tracking-tight text-[#64748B] transition-colors hover:text-[#0F1B3D]">
             {t}
           </span>
         ))}
@@ -176,13 +176,13 @@ const Start = () => (
 
     {/* CASES */}
     <Section index="07" eyebrow="Einsatzbeispiele" title="Wo Modelle bereits produktiv Code erzeugen.">
-      <div className="divide-y divide-[#E6ECF5] border-y border-[#E6ECF5]">
+      <div className="divide-y divide-[#E8ECF1] border-y border-[#E8ECF1]">
         {cases.map(([branche, projekt, ergebnis]) => (
           <div key={projekt} className="grid items-center gap-6 py-8 md:grid-cols-12">
-            <div className="md:col-span-3 text-[11px] font-mono uppercase tracking-widest text-[#5B6B85]">{branche}</div>
-            <div className="md:col-span-6 text-lg text-[#0B1220]">{projekt}</div>
-            <div className="md:col-span-2 font-mono text-sm text-[#2563EB]">{ergebnis}</div>
-            <div className="md:col-span-1 md:text-right"><ChevronRight size={18} className="inline text-[#5B6B85]" /></div>
+            <div className="md:col-span-3 text-[11px] font-mono uppercase tracking-widest text-[#64748B]">{branche}</div>
+            <div className="md:col-span-6 text-lg text-[#0F1B3D]">{projekt}</div>
+            <div className="md:col-span-2 font-mono text-sm text-[#3B82F6]">{ergebnis}</div>
+            <div className="md:col-span-1 md:text-right"><ChevronRight size={18} className="inline text-[#64748B]" /></div>
           </div>
         ))}
       </div>
@@ -192,18 +192,18 @@ const Start = () => (
     <Section index="08" eyebrow="Stimmen" bg="muted">
       <div className="grid items-start gap-10 md:grid-cols-12">
         <div className="md:col-span-2">
-          <div className="flex h-20 w-20 items-center justify-center rounded-full bg-[#EFF4FF] font-mono text-2xl text-[#2563EB]">
+          <div className="flex h-20 w-20 items-center justify-center rounded-full bg-[#EFF6FF] font-mono text-2xl text-[#3B82F6]">
             MK
           </div>
         </div>
         <div className="md:col-span-10">
-          <Quote size={28} className="text-[#2563EB]" strokeWidth={1.5} />
-          <blockquote className="mt-4 text-2xl font-medium leading-snug tracking-tight text-[#0B1220] md:text-3xl">
+          <Quote size={28} className="text-[#3B82F6]" strokeWidth={1.5} />
+          <blockquote className="mt-4 text-2xl font-medium leading-snug tracking-tight text-[#0F1B3D] md:text-3xl">
             „Nach dem Umstieg auf Codebricks entstehen neue Antragsvarianten in Tagen statt in
             Wochen — und zum ersten Mal stimmt die Fachdoku mit dem laufenden System überein."
           </blockquote>
-          <p className="mt-6 text-sm text-[#5B6B85]">
-            <span className="font-medium text-[#0B1220]">Dr. Martin Köhler</span> · Leiter Anwendungsentwicklung, Finanzdienstleister
+          <p className="mt-6 text-sm text-[#64748B]">
+            <span className="font-medium text-[#0F1B3D]">Dr. Martin Köhler</span> · Leiter Anwendungsentwicklung, Finanzdienstleister
           </p>
         </div>
       </div>
