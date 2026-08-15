@@ -7,9 +7,9 @@ import ScrollToTop from "@/components/ScrollToTop";
 import CookieBanner from "@/components/CookieBanner";
 import SiteLayout from "@/components/layout/SiteLayout";
 import Start from "./pages/Start.tsx";
-import Beratung from "./pages/Beratung.tsx";
-import Softwareentwicklung from "./pages/Softwareentwicklung.tsx";
-import Systemintegration from "./pages/Systemintegration.tsx";
+import Plattform from "./pages/Plattform.tsx";
+import ModellgetriebeneEntwicklung from "./pages/ModellgetriebeneEntwicklung.tsx";
+import Services from "./pages/Services.tsx";
 import Kontakt from "./pages/Kontakt.tsx";
 import Impressum from "./pages/Impressum.tsx";
 import Datenschutz from "./pages/Datenschutz.tsx";
@@ -31,9 +31,9 @@ const App = () => (
         <Routes>
           <Route element={<SiteLayout />}>
             <Route path="/" element={<Start />} />
-            <Route path="/beratung" element={<Beratung />} />
-            <Route path="/softwareentwicklung" element={<Softwareentwicklung />} />
-            <Route path="/systemintegration" element={<Systemintegration />} />
+            <Route path="/plattform" element={<Plattform />} />
+            <Route path="/modellgetriebene-entwicklung" element={<ModellgetriebeneEntwicklung />} />
+            <Route path="/services" element={<Services />} />
             <Route path="/team" element={<Team />} />
             <Route path="/karriere" element={<Karriere />} />
             <Route path="/karriere/bewerbung" element={<Bewerbung />} />
@@ -43,9 +43,12 @@ const App = () => (
             <Route path="/datenschutz" element={<Datenschutz />} />
 
             {/* Redirects von alten Routen */}
-            <Route path="/leistungen" element={<Navigate to="/beratung" replace />} />
-            <Route path="/software" element={<Navigate to="/softwareentwicklung" replace />} />
-            <Route path="/methodik" element={<Navigate to="/beratung" replace />} />
+            <Route path="/leistungen" element={<Navigate to="/plattform" replace />} />
+            <Route path="/beratung" element={<Navigate to="/plattform" replace />} />
+            <Route path="/softwareentwicklung" element={<Navigate to="/modellgetriebene-entwicklung" replace />} />
+            <Route path="/software" element={<Navigate to="/modellgetriebene-entwicklung" replace />} />
+            <Route path="/systemintegration" element={<Navigate to="/services" replace />} />
+            <Route path="/methodik" element={<Navigate to="/modellgetriebene-entwicklung" replace />} />
             
           </Route>
           <Route path="*" element={<NotFound />} />
