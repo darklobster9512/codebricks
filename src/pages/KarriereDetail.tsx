@@ -19,7 +19,8 @@ const KarriereDetail = () => {
   return (
     <>
       <SEO
-        title={`${stelle.titel} | Karriere | Codebricks`}
+        title={`${stelle.titel} – Job bei Codebricks`}
+        brand={false}
         description={stelle.kurzbeschreibung}
         path={`/karriere/${stelle.slug}`}
       />
