@@ -14,8 +14,8 @@ export default {
     },
     extend: {
       fontFamily: {
-        sans: ['Epilogue', 'system-ui', '-apple-system', 'sans-serif'],
-        display: ['Urbanist', 'Epilogue', 'sans-serif'],
+        sans: ['DM Sans', 'system-ui', '-apple-system', 'sans-serif'],
+        display: ['Space Grotesk', 'DM Sans', 'sans-serif'],
       },
       colors: {
         border: "hsl(var(--border))",
