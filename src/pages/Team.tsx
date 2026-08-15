@@ -152,7 +152,7 @@ const bereiche: Bereich[] = [
 ];
 
 const PeopleRows = ({ people }: { people: Person[] }) => (
-  <div className="divide-y divide-[#E8ECF1] border-y border-[#E8ECF1]">
+  <div className="divide-y divide-[#E8ECF1] rounded-[1.25rem] border border-[#E8ECF1] bg-white px-6">
     {people.map((p) => (
       <div key={p.name} className="grid gap-6 md:grid-cols-12 py-10">
         <div className="md:col-span-4">

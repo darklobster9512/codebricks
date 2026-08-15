@@ -76,7 +76,7 @@ const ModellgetriebeneEntwicklung = () => (
     <Section index="03" eyebrow="Vorgehen" title="Fünf Phasen bis zum produktiven Durchstich.">
       <div className="grid gap-6 md:grid-cols-5">
         {phasen.map(([n, t, d]) => (
-          <div key={n} className="border border-[#E8ECF1] bg-white p-6">
+          <div key={n} className="tile p-6">
             <p className="font-mono text-xs text-[#3B82F6]">{n}</p>
             <h3 className="mt-4 text-base font-semibold text-[#0F1B3D]">{t}</h3>
             <p className="mt-2 text-sm leading-relaxed text-[#64748B]">{d}</p>

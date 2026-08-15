@@ -81,7 +81,7 @@ const Services = () => (
     <Section index="03" eyebrow="Lizenzmodelle" title="Drei Modelle, transparent kalkulierbar.">
       <div className="grid gap-6 md:grid-cols-3">
         {lizenzen.map(([t, d, hinweis]) => (
-          <div key={t} className="flex flex-col border border-[#E8ECF1] bg-white p-8">
+          <div key={t} className="flex flex-col tile p-8">
             <h3 className="text-xl font-semibold text-[#0F1B3D]">{t}</h3>
             <p className="mt-3 flex-1 text-sm leading-relaxed text-[#64748B]">{d}</p>
             <p className="mt-6 border-t border-[#E8ECF1] pt-4 font-mono text-xs text-[#3B82F6]">{hinweis}</p>
@@ -114,7 +114,7 @@ const Services = () => (
     <Section index="05" eyebrow="Service-Level" title="Was wir vertraglich zusagen." bg="muted">
       <div className="grid gap-6 md:grid-cols-3">
         {sla.map(([label, wert, detail]) => (
-          <div key={label} className="border border-[#E8ECF1] bg-white p-6">
+          <div key={label} className="tile p-6">
             <p className="text-[11px] font-mono uppercase tracking-widest text-[#64748B]">{label}</p>
             <p className="mt-4 font-mono text-2xl text-[#0F1B3D]">{wert}</p>
             <p className="mt-2 text-sm leading-relaxed text-[#64748B]">{detail}</p>

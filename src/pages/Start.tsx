@@ -150,7 +150,7 @@ const Start = () => (
         {techs.map((t) => (
           <span
             key={t}
-            className="rounded-full border border-[#E8ECF1] bg-white px-5 py-2.5 font-display text-sm font-medium text-[#0F1B3D] shadow-[0_1px_2px_rgba(15,27,61,0.04)] transition-colors hover:border-[#3B82F6] hover:text-[#3B82F6]"
+            className="rounded-full tile px-5 py-2.5 font-display text-sm font-medium text-[#0F1B3D] shadow-[0_1px_2px_rgba(15,27,61,0.04)] transition-colors hover:border-[#3B82F6] hover:text-[#3B82F6]"
           >
             {t}
           </span>
