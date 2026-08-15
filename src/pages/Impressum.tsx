@@ -46,7 +46,7 @@ const Impressum = () => (
         </div>
         <div>
           <h2 className="text-[11px] font-mono uppercase tracking-widest text-[#3B82F6]">Verantwortlich für den Inhalt</h2>
-          <p className="mt-3">Ivan Kulinstev (Anschrift wie oben)</p>
+          <p className="mt-3">Erik Andreas Hübner (Anschrift wie oben)</p>
         </div>
         <div>
           <h2 className="text-[11px] font-mono uppercase tracking-widest text-[#3B82F6]">Streitschlichtung</h2>
