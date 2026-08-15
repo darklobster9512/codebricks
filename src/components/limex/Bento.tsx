@@ -6,7 +6,7 @@ interface BentoGridProps {
 }
 
 export const BentoGrid = ({ children, className }: BentoGridProps) => (
-  <div className={`grid grid-cols-1 gap-4 md:grid-cols-6 ${className || ''}`}>{children}</div>
+  <div className={`grid grid-cols-1 gap-3 sm:gap-4 md:grid-cols-6 ${className || ''}`}>{children}</div>
 );
 
 type Span = 2 | 3 | 4 | 6;
@@ -43,7 +43,7 @@ export const BentoTile = ({
 }: BentoTileProps) => (
   <div
     className={`${spanClass[span]} ${variantClass[variant]} overflow-hidden ${
-      padded ? 'p-7' : ''
+      padded ? 'p-6 sm:p-7' : ''
     } ${className || ''}`}
   >
     {children}
