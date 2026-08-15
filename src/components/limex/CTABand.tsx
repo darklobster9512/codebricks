@@ -11,12 +11,12 @@ interface Props {
 }
 
 const CTABand = ({
-  title = 'Sprechen wir über Ihr Projekt.',
-  intro = 'Ein 30-minütiges Erstgespräch, unverbindlich und ohne Verkaufsdruck. Wir hören zu und sagen ehrlich, ob wir passen.',
-  primaryLabel = 'Termin buchen',
+  title = 'Sehen Sie das Framework an Ihrer eigenen Fachdomäne.',
+  intro = 'Eine 30-minütige Live-Demo, unverbindlich und ohne Verkaufsdruck. Wir modellieren einen Ausschnitt Ihres Fachbereichs und zeigen den generierten Code.',
+  primaryLabel = 'Demo buchen',
   primaryTo = '/kontakt',
-  secondaryLabel = 'Leistungen ansehen',
-  secondaryTo = '/beratung',
+  secondaryLabel = 'Plattform ansehen',
+  secondaryTo = '/plattform',
 }: Props) => (
   <section className="border-t border-[#E6ECF5] bg-[#0B1220]">
     <div className="mx-auto max-w-7xl px-6 py-20 lg:py-24">
