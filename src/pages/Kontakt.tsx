@@ -39,8 +39,8 @@ const Kontakt = () => {
         breadcrumb={[{ label: 'Start', href: '/' }, { label: 'Kontakt' }]}
       />
 
-      <section className="border-t border-[#E8ECF1] bg-white">
-        <div className="mx-auto max-w-7xl px-6 py-20">
+      <section className="bg-[#FAFBFC]">
+        <div className="mx-auto max-w-6xl px-6 pb-16 lg:pb-24">
           <div className="grid gap-4 lg:grid-cols-12">
             <form onSubmit={submit} className="tile lg:col-span-7 space-y-6 p-8 lg:p-10">
               <div className="grid gap-6 md:grid-cols-2">
