@@ -9,26 +9,26 @@ const HeroFull = () => {
   };
 
   return (
-    <section className="relative overflow-hidden bg-[#FAFBFC] pt-10 pb-4 lg:pt-14">
+    <section className="relative overflow-hidden bg-[#FAFBFC] pt-6 pb-4 sm:pt-10 lg:pt-14">
       <div
         aria-hidden
         className="pointer-events-none absolute -top-32 left-1/2 h-[520px] w-[860px] -translate-x-1/2 rounded-full bg-[#3B82F6]/10 blur-3xl"
       />
-      <div className="relative mx-auto max-w-6xl px-6">
-        <div className="grid gap-4 md:grid-cols-6">
+      <div className="relative mx-auto max-w-6xl px-5 sm:px-6">
+        <div className="grid gap-3 sm:gap-4 md:grid-cols-6">
           {/* Claim-Tile */}
-          <div className="tile md:col-span-4 p-8 lg:p-12">
+          <div className="tile md:col-span-4 p-6 sm:p-8 lg:p-12">
             <span className="chip">Codebricks GmbH · Berlin</span>
-            <h1 className="mt-7 font-display text-[40px] font-semibold leading-[1.02] tracking-[-0.035em] text-[#0F1B3D] sm:text-[52px] lg:text-[64px]">
+            <h1 className="mt-5 font-display text-[33px] font-semibold leading-[1.05] tracking-[-0.035em] text-[#0F1B3D] sm:mt-7 sm:text-[52px] sm:leading-[1.02] lg:text-[64px]">
               Wir bauen die Werkzeuge, die{' '}
               <span className="text-[#3B82F6]">Ihren Code schreiben</span>.
             </h1>
-            <p className="mt-7 max-w-xl text-[17px] leading-relaxed text-[#64748B]">
+            <p className="mt-5 max-w-xl text-[16px] leading-relaxed text-[#64748B] sm:mt-7 sm:text-[17px]">
               Modelle, eigene DSLs und Generatoren, aus denen produktionsreifer Code
               entsteht — als Plattform mit Lizenz, Einführung und Hersteller-Support
               aus Berlin.
             </p>
-            <div className="mt-9 flex flex-wrap gap-3">
+            <div className="mt-7 flex flex-wrap gap-3 sm:mt-9">
               <Link
                 to="/kontakt"
                 className="inline-flex h-12 items-center gap-2 rounded-full bg-[#0F1B3D] px-6 text-sm font-medium text-white transition-colors hover:bg-[#3B82F6]"
@@ -46,7 +46,7 @@ const HeroFull = () => {
           </div>
 
           {/* Bild-Tile */}
-          <div className="tile md:col-span-2 min-h-[260px] overflow-hidden p-0">
+          <div className="tile md:col-span-2 aspect-[16/10] min-h-0 overflow-hidden p-0 md:aspect-auto md:min-h-[260px]">
             <img
               src={heroImage}
               alt="Entwicklungsteam von Codebricks im Berliner Büro"
@@ -58,7 +58,7 @@ const HeroFull = () => {
           </div>
 
           {/* Kennzahlen */}
-          <div className="tile tile-hover md:col-span-2 p-7">
+          <div className="tile tile-hover md:col-span-2 p-6 sm:p-7">
             <Building2 size={22} className="text-[#3B82F6]" strokeWidth={1.75} />
             <p className="mt-5 font-display text-[28px] font-semibold tracking-[-0.02em] text-[#0F1B3D]">
               Berlin · DE
@@ -77,7 +77,7 @@ const HeroFull = () => {
             </div>
           </div>
 
-          <div className="tile-ink md:col-span-2 p-7">
+          <div className="tile-ink md:col-span-2 p-6 sm:p-7">
             <Boxes size={22} className="text-[#7DB0FB]" strokeWidth={1.75} />
             <p className="mt-5 font-display text-[28px] font-semibold tracking-[-0.02em] text-white">
               40+ Modelle
@@ -97,7 +97,7 @@ const HeroFull = () => {
             </div>
           </div>
 
-          <div className="tile tile-hover group md:col-span-2 p-7">
+          <div className="tile tile-hover group md:col-span-2 p-6 sm:p-7">
             <LineChart size={22} className="text-[#3B82F6]" strokeWidth={1.75} />
             <p className="mt-5 font-display text-[22px] font-semibold tracking-[-0.02em] text-[#0F1B3D]">
               Modell-Piloten

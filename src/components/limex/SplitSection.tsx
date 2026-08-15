@@ -36,10 +36,10 @@ const SplitSection = ({
     id={id}
     className={bg === 'muted' ? 'bg-[#F2F5F9]' : 'bg-[#FAFBFC]'}
   >
-    <div className="mx-auto max-w-6xl px-6 py-16 lg:py-24">
-      <div className="grid items-stretch gap-4 lg:grid-cols-12">
+    <div className="mx-auto max-w-6xl px-5 py-12 sm:px-6 sm:py-16 lg:py-24">
+      <div className="grid items-stretch gap-3 sm:gap-4 lg:grid-cols-12">
         <div
-          className={`tile p-8 lg:p-12 lg:col-span-7 flex flex-col justify-center ${
+          className={`tile p-6 sm:p-8 lg:p-12 lg:col-span-7 flex flex-col justify-center ${
             imageSide === 'left' ? 'lg:order-2' : ''
           }`}
         >
@@ -49,14 +49,14 @@ const SplitSection = ({
               {eyebrow}
             </span>
           )}
-          <h2 className="mt-6 font-display text-[30px] md:text-[40px] font-semibold tracking-[-0.03em] leading-[1.08] text-[#0F1B3D]">
+          <h2 className="mt-5 font-display text-[26px] sm:mt-6 sm:text-[30px] md:text-[40px] font-semibold tracking-[-0.03em] leading-[1.1] text-[#0F1B3D]">
             {title}
           </h2>
           {body && (
-            <div className="mt-5 space-y-4 text-[17px] leading-relaxed text-[#64748B]">{body}</div>
+            <div className="mt-4 space-y-4 text-[16px] leading-relaxed text-[#64748B] sm:mt-5 sm:text-[17px]">{body}</div>
           )}
           {bullets && (
-            <ul className="mt-8 grid gap-3 sm:grid-cols-2">
+            <ul className="mt-6 grid gap-2.5 sm:mt-8 sm:gap-3 sm:grid-cols-2">
               {bullets.map((b) => (
                 <li
                   key={b}
@@ -71,7 +71,7 @@ const SplitSection = ({
           {linkTo && linkLabel && (
             <Link
               to={linkTo}
-              className="mt-8 inline-flex h-11 w-fit items-center gap-2 rounded-full bg-[#0F1B3D] px-6 text-sm font-medium text-white transition-colors hover:bg-[#1D4ED8]"
+              className="mt-6 inline-flex h-12 w-full items-center justify-center gap-2 rounded-full bg-[#0F1B3D] px-6 text-sm font-medium text-white transition-colors hover:bg-[#1D4ED8] sm:mt-8 sm:h-11 sm:w-fit"
             >
               {linkLabel} <ArrowRight size={15} />
             </Link>
@@ -89,7 +89,7 @@ const SplitSection = ({
             loading="lazy"
             width={960}
             height={640}
-            className="h-full min-h-[280px] w-full select-none object-cover"
+            className="aspect-[16/10] h-full w-full select-none object-cover lg:aspect-auto lg:min-h-[280px]"
             draggable={false}
             onContextMenu={(e) => e.preventDefault()}
             onDragStart={(e) => e.preventDefault()}

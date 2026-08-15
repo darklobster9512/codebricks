@@ -22,7 +22,7 @@ const Karriere = () => (
     />
 
     <Section index="01" eyebrow="Offene Stellen" title="Aktuell suchen wir.">
-      <div className="divide-y divide-[#E8ECF1] rounded-[1.25rem] border border-[#E8ECF1] bg-white px-6">
+      <div className="divide-y divide-[#E8ECF1] rounded-[1.25rem] border border-[#E8ECF1] bg-white px-5 sm:px-6">
         {stellen.map((s) => (
           <Link
             key={s.slug}

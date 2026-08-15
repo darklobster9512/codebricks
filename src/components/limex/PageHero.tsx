@@ -16,9 +16,9 @@ const PageHero = ({ eyebrow, title, intro, breadcrumb }: PageHeroProps) => (
       aria-hidden
       className="pointer-events-none absolute -top-40 right-[-10%] h-[420px] w-[420px] rounded-full bg-[#3B82F6]/10 blur-3xl"
     />
-    <div className="relative mx-auto max-w-6xl px-6 pt-14 pb-16 lg:pt-20 lg:pb-20">
+    <div className="relative mx-auto max-w-6xl px-5 pt-10 pb-12 sm:px-6 sm:pt-14 sm:pb-16 lg:pt-20 lg:pb-20">
       {breadcrumb && (
-        <nav className="mb-8 text-[12px] text-[#64748B]">
+        <nav className="mb-6 flex flex-wrap items-center gap-y-1 text-[12px] text-[#64748B] sm:mb-8">
           {breadcrumb.map((c, i) => (
             <span key={i}>
               {c.href ? (
@@ -31,13 +31,13 @@ const PageHero = ({ eyebrow, title, intro, breadcrumb }: PageHeroProps) => (
           ))}
         </nav>
       )}
-      <div className="tile p-8 lg:p-14">
+      <div className="tile p-6 sm:p-8 lg:p-14">
         {eyebrow && <span className="chip">{eyebrow}</span>}
-        <h1 className="mt-6 max-w-3xl font-display text-[38px] md:text-[54px] lg:text-[62px] font-semibold tracking-[-0.035em] leading-[1.02] text-[#0F1B3D]">
+        <h1 className="mt-5 max-w-3xl font-display text-[32px] sm:mt-6 sm:text-[38px] md:text-[54px] lg:text-[62px] font-semibold tracking-[-0.035em] leading-[1.05] text-[#0F1B3D]">
           {title}
         </h1>
         {intro && (
-          <p className="mt-7 max-w-2xl text-[17px] leading-relaxed text-[#64748B]">{intro}</p>
+          <p className="mt-5 max-w-2xl text-[16px] leading-relaxed text-[#64748B] sm:mt-7 sm:text-[17px]">{intro}</p>
         )}
       </div>
     </div>

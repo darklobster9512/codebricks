@@ -16,9 +16,9 @@ const Section = ({ eyebrow, index, title, intro, children, bg = 'white', id, cla
     id={id}
     className={bg === 'muted' ? 'bg-[#F2F5F9]' : 'bg-[#FAFBFC]'}
   >
-    <div className={`mx-auto max-w-6xl px-6 py-16 lg:py-24 ${className || ''}`}>
+    <div className={`mx-auto max-w-6xl px-5 py-12 sm:px-6 sm:py-16 lg:py-24 ${className || ''}`}>
       {(eyebrow || index || title || intro) && (
-        <div className="mb-12 max-w-3xl">
+        <div className="mb-8 max-w-3xl sm:mb-12">
           {(index || eyebrow) && (
             <span className="chip">
               {index && <span className="text-[#94A3B8]">{index}</span>}
@@ -26,12 +26,12 @@ const Section = ({ eyebrow, index, title, intro, children, bg = 'white', id, cla
             </span>
           )}
           {title && (
-            <h2 className="mt-6 font-display text-[32px] md:text-[44px] font-semibold tracking-[-0.03em] text-[#0F1B3D] leading-[1.08]">
+            <h2 className="mt-5 font-display text-[27px] sm:mt-6 sm:text-[32px] md:text-[44px] font-semibold tracking-[-0.03em] text-[#0F1B3D] leading-[1.08]">
               {title}
             </h2>
           )}
           {intro && (
-            <p className="mt-5 max-w-2xl text-[17px] leading-relaxed text-[#64748B]">{intro}</p>
+            <p className="mt-4 max-w-2xl text-[16px] leading-relaxed text-[#64748B] sm:mt-5 sm:text-[17px]">{intro}</p>
           )}
         </div>
       )}

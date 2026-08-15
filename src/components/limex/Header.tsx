@@ -19,15 +19,20 @@ const Header = () => {
   useEffect(() => {
     document.body.style.overflow = open ? 'hidden' : '';
   }, [open]);
+  useEffect(() => {
+    const onKey = (e: KeyboardEvent) => e.key === 'Escape' && setOpen(false);
+    window.addEventListener('keydown', onKey);
+    return () => window.removeEventListener('keydown', onKey);
+  }, []);
 
   return (
-    <header className="sticky top-0 z-50 w-full px-4 pt-4">
-      <div className="mx-auto flex max-w-6xl items-center justify-between gap-4 rounded-full border border-[#E8ECF1] bg-white/85 py-2.5 pl-5 pr-2.5 shadow-[0_2px_6px_rgba(15,27,61,0.05),0_20px_40px_-28px_rgba(15,27,61,0.35)] backdrop-blur-xl">
+    <header className="sticky top-0 z-50 w-full px-3 pt-3 sm:px-4 sm:pt-4">
+      <div className="relative z-10 mx-auto flex max-w-6xl items-center justify-between gap-3 rounded-full border border-[#E8ECF1] bg-white/85 py-2 pl-4 pr-2 shadow-[0_2px_6px_rgba(15,27,61,0.05),0_20px_40px_-28px_rgba(15,27,61,0.35)] backdrop-blur-xl sm:gap-4 sm:py-2.5 sm:pl-5 sm:pr-2.5">
         <Link to="/" className="flex items-center" aria-label="Codebricks Startseite">
           <img
             src={logo}
             alt="Codebricks GmbH"
-            className="h-11 w-auto select-none"
+            className="h-8 w-auto select-none sm:h-11"
             draggable={false}
             onContextMenu={(e) => e.preventDefault()}
           />
@@ -70,14 +75,20 @@ const Header = () => {
       </div>
 
       {open && (
-        <div className="lg:hidden mx-auto mt-3 max-w-6xl rounded-3xl border border-[#E8ECF1] bg-white p-5 shadow-[0_24px_48px_-24px_rgba(15,27,61,0.3)]">
+        <>
+          <div
+            className="fixed inset-0 z-0 lg:hidden"
+            onClick={() => setOpen(false)}
+            aria-hidden
+          />
+        <div className="lg:hidden relative z-10 mx-auto mt-3 max-h-[70vh] max-w-6xl overflow-y-auto rounded-3xl border border-[#E8ECF1] bg-white p-4 shadow-[0_24px_48px_-24px_rgba(15,27,61,0.3)]">
           <div className="flex flex-col gap-1">
             {nav.map((item) => (
               <NavLink
                 key={item.to}
                 to={item.to}
                 className={({ isActive }) =>
-                  `rounded-2xl px-4 py-3 text-base font-medium ${
+                  `rounded-2xl px-4 py-3 text-[15px] font-medium ${
                     isActive ? 'bg-[#EFF6FF] text-[#1D4ED8]' : 'text-[#0F1B3D]'
                   }`
                 }
@@ -93,6 +104,7 @@ const Header = () => {
             </Link>
           </div>
         </div>
+        </>
       )}
     </header>
   );

@@ -1,6 +1,5 @@
 import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import { Button } from '@/components/ui/button';
 
 const CookieBanner = () => {
   const [visible, setVisible] = useState(false);
@@ -20,21 +19,30 @@ const CookieBanner = () => {
   if (!visible) return null;
 
   return (
-    <div className="fixed bottom-5 left-4 right-4 z-50 mx-auto max-w-xl animate-[slide-up_0.4s_ease-out] glass-card rounded-2xl px-6 py-5 shadow-xl">
+    <div
+      className="tile fixed inset-x-3 bottom-3 z-50 mx-auto max-w-xl animate-[slide-up_0.4s_ease-out] p-4 sm:inset-x-4 sm:bottom-5 sm:p-5"
+      style={{ marginBottom: 'env(safe-area-inset-bottom)' }}
+    >
       <div className="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
-        <p className="text-sm leading-relaxed text-foreground">
-          🍪 Wir verwenden Cookies, um Ihnen die beste Erfahrung zu bieten.{' '}
-          <Link to="/datenschutz" className="text-primary font-medium hover:underline">
+        <p className="text-[13px] leading-relaxed text-[#64748B] sm:text-sm">
+          Wir verwenden Cookies, um Ihnen die beste Erfahrung zu bieten.{' '}
+          <Link to="/datenschutz" className="font-medium text-[#3B82F6] hover:underline">
             Mehr erfahren
           </Link>
         </p>
-        <div className="flex items-center gap-3 shrink-0">
-          <Button variant="outline" size="sm" onClick={() => handle(false)}>
+        <div className="flex shrink-0 items-center gap-2">
+          <button
+            onClick={() => handle(false)}
+            className="inline-flex h-11 flex-1 items-center justify-center rounded-full border border-[#E8ECF1] bg-white px-5 text-sm font-medium text-[#0F1B3D] transition-colors hover:border-[#3B82F6] hover:text-[#3B82F6] sm:h-10 sm:flex-none"
+          >
             Ablehnen
-          </Button>
-          <Button size="sm" className="bg-gradient-blue text-primary-foreground shadow-md px-5" onClick={() => handle(true)}>
+          </button>
+          <button
+            onClick={() => handle(true)}
+            className="inline-flex h-11 flex-1 items-center justify-center rounded-full bg-[#0F1B3D] px-5 text-sm font-medium text-white transition-colors hover:bg-[#3B82F6] sm:h-10 sm:flex-none"
+          >
             Akzeptieren
-          </Button>
+          </button>
         </div>
       </div>
     </div>

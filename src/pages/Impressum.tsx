@@ -10,8 +10,8 @@ const Impressum = () => (
       path="/impressum"
     />
     <PageHero title="Impressum" breadcrumb={[{ label: 'Start', href: '/' }, { label: 'Impressum' }]} />
-    <section className="bg-[#FAFBFC] px-6 pb-16 lg:pb-24">
-      <div className="tile mx-auto max-w-3xl p-8 lg:p-12 space-y-10 text-sm leading-relaxed text-[#0F1B3D]">
+    <section className="bg-[#FAFBFC] px-5 pb-12 sm:px-6 sm:pb-16 lg:pb-24">
+      <div className="tile mx-auto max-w-3xl p-6 sm:p-8 lg:p-12 space-y-10 text-sm leading-relaxed text-[#0F1B3D]">
         <div>
           <h2 className="text-[11px] font-mono uppercase tracking-widest text-[#3B82F6]">Angaben gemäß § 5 TMG</h2>
           <p className="mt-3">
