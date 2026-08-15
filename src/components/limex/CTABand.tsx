@@ -20,7 +20,8 @@ const CTABand = ({
 }: Props) => (
   <section className="bg-[#FAFBFC] pb-16 lg:pb-24">
     <div className="mx-auto max-w-6xl px-6">
-      <div className="tile-ink dot-grid relative overflow-hidden p-10 lg:p-16">
+      <div className="tile-ink relative overflow-hidden p-10 lg:p-16">
+        <div aria-hidden className="dot-grid pointer-events-none absolute inset-0 opacity-40" />
         <div
           aria-hidden
           className="pointer-events-none absolute -right-24 -top-24 h-72 w-72 rounded-full bg-[#3B82F6]/25 blur-3xl"

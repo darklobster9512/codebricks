@@ -222,7 +222,8 @@
 }
 .tile-ink {
   @apply relative rounded-[1.25rem] border border-white/10;
-  background: linear-gradient(150deg, hsl(224 60% 15%), hsl(224 55% 11%));
+  background-color: hsl(224 60% 15%);
+  background-image: linear-gradient(150deg, hsl(224 60% 15%), hsl(224 55% 11%));
 }
 .tile-hover {
   transition: transform .35s cubic-bezier(.2,.7,.2,1), box-shadow .35s, border-color .3s;
