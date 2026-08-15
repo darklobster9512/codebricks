@@ -74,8 +74,8 @@ const Bewerbung = () => {
   return (
     <>
       <SEO
-        title="Bewerbung | LIMEX Solutions"
-        description="Bewirb dich in wenigen Schritten bei LIMEX Solutions in Berlin."
+        title="Bewerbung | Codebricks"
+        description="Bewirb dich in wenigen Schritten bei Codebricks in Berlin."
         path="/karriere/bewerbung"
       />
       <PageHero

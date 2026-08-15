@@ -1,12 +1,12 @@
 import { Link, NavLink, useLocation } from 'react-router-dom';
 import { useEffect, useState } from 'react';
 import { Menu, X } from 'lucide-react';
-import logo from '@/assets/logo-limex.png';
+import logo from '@/assets/logo-codebricks.png';
 
 const nav = [
-  { to: '/beratung', label: 'Beratung' },
-  { to: '/softwareentwicklung', label: 'Softwareentwicklung' },
-  { to: '/systemintegration', label: 'Systemintegration' },
+  { to: '/plattform', label: 'Plattform' },
+  { to: '/modellgetriebene-entwicklung', label: 'Modellgetriebene Entwicklung' },
+  { to: '/services', label: 'Services' },
   { to: '/team', label: 'Team' },
   { to: '/karriere', label: 'Karriere' },
 ];
@@ -23,11 +23,11 @@ const Header = () => {
   return (
     <header className="sticky top-0 z-50 w-full border-b border-[#E6ECF5] bg-white/95 backdrop-blur">
       <div className="mx-auto flex h-16 max-w-7xl items-center justify-between px-6 overflow-visible">
-        <Link to="/" className="flex items-center" aria-label="LIMEX Solutions Startseite">
+        <Link to="/" className="flex items-center" aria-label="Codebricks Startseite">
           <img
             src={logo}
-            alt="LIMEX Solutions"
-            className="h-14 w-auto -my-2 select-none"
+            alt="Codebricks GmbH"
+            className="h-9 w-auto select-none"
             draggable={false}
             onContextMenu={(e) => e.preventDefault()}
           />

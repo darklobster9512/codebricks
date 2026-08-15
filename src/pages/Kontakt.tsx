@@ -28,8 +28,8 @@ const Kontakt = () => {
   return (
     <>
       <SEO
-        title="Kontakt | LIMEX Solutions"
-        description="Direkter Draht zum LIMEX-Team in Berlin: Erstgespräch anfragen, Angebot einholen, Zusammenarbeit starten."
+        title="Kontakt | Codebricks"
+        description="Direkter Draht zum Codebricks-Team in Berlin: Erstgespräch anfragen, Angebot einholen, Zusammenarbeit starten."
         path="/kontakt"
       />
       <PageHero
@@ -89,17 +89,17 @@ const Kontakt = () => {
                   <div className="flex gap-3">
                     <MapPin size={18} className="text-[#5B6B85] mt-0.5 shrink-0" />
                     <div>
-                      <p className="font-medium text-[#0B1220]">LIMEX Solutions GmbH</p>
-                      <p className="text-[#5B6B85]">Blankenhainer Str. 5<br />12249 Berlin</p>
+                      <p className="font-medium text-[#0B1220]">Codebricks GmbH</p>
+                      <p className="text-[#5B6B85]">Leipziger Platz 15<br />10117 Berlin</p>
                     </div>
                   </div>
                   <div className="flex gap-3">
                     <Mail size={18} className="text-[#5B6B85] mt-0.5 shrink-0" />
-                    <a href="mailto:kontakt@limex-solutions.net" className="text-[#0B1220] hover:text-[#2563EB]">kontakt@limex-solutions.net</a>
+                    <a href="mailto:kontakt@codebricks-gmbh.de" className="text-[#0B1220] hover:text-[#2563EB]">kontakt@codebricks-gmbh.de</a>
                   </div>
                   <div className="flex gap-3">
                     <Phone size={18} className="text-[#5B6B85] mt-0.5 shrink-0" />
-                    <a href="tel:+4930754387430" className="text-[#0B1220] hover:text-[#2563EB]">030 754387430</a>
+                    <a href="tel:+4930123456789" className="text-[#0B1220] hover:text-[#2563EB]">030 123456789</a>
                   </div>
                   <div className="flex gap-3">
                     <Clock size={18} className="text-[#5B6B85] mt-0.5 shrink-0" />

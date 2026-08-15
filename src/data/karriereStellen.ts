@@ -92,7 +92,7 @@ export const stellen: Stelle[] = [
     kurzbeschreibung:
       'Sie begleiten Kunden aus dem Mittelstand von der Strategiefrage bis zum Zielbild — nüchtern, gründlich und ohne PowerPoint-Zauber.',
     beschreibung:
-      'Als IT-Consultant sind Sie das Gesicht von LIMEX beim Kunden. Sie führen Discovery-Phasen, moderieren Workshops mit Geschäftsführung und IT, und übersetzen zwischen Fachlichkeit und Technik.',
+      'Als IT-Consultant sind Sie das Gesicht von Codebricks beim Kunden. Sie führen Discovery-Phasen, moderieren Workshops mit Geschäftsführung und IT, und übersetzen zwischen Fachlichkeit und Technik.',
     aufgaben: [
       'Discovery-Interviews und Analyse bestehender IT-Landschaften',
       'Erarbeitung von Zielbildern, Roadmaps und Business Cases',
@@ -157,7 +157,7 @@ export const stellen: Stelle[] = [
     kurzbeschreibung:
       'Sie studieren Informatik oder Ähnliches und wollen echte Kundenprojekte sehen — kein Kaffee holen, kein Ticket-Abarbeiten in Isolation.',
     beschreibung:
-      'Bei LIMEX werden Sie einem festen Team zugeordnet und arbeiten mit an realen Kundenprojekten. Sie schreiben produktiven Code, gehen in Reviews und bekommen so viel Verantwortung, wie Sie tragen wollen.',
+      'Bei Codebricks werden Sie einem festen Team zugeordnet und arbeiten mit an realen Kundenprojekten. Sie schreiben produktiven Code, gehen in Reviews und bekommen so viel Verantwortung, wie Sie tragen wollen.',
     aufgaben: [
       'Mitentwicklung an Kundenprojekten in TypeScript/React oder Python',
       'Schreiben von Tests und Dokumentation',

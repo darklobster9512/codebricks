@@ -1,39 +1,39 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://limex-solutions.gmbh/</loc>
+    <loc>https://codebricks.gmbh/</loc>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://limex-solutions.gmbh/beratung</loc>
+    <loc>https://codebricks.gmbh/plattform</loc>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://limex-solutions.gmbh/softwareentwicklung</loc>
+    <loc>https://codebricks.gmbh/modellgetriebene-entwicklung</loc>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://limex-solutions.gmbh/systemintegration</loc>
+    <loc>https://codebricks.gmbh/services</loc>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://limex-solutions.gmbh/team</loc>
+    <loc>https://codebricks.gmbh/team</loc>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://limex-solutions.gmbh/karriere</loc>
+    <loc>https://codebricks.gmbh/karriere</loc>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://limex-solutions.gmbh/kontakt</loc>
+    <loc>https://codebricks.gmbh/kontakt</loc>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://limex-solutions.gmbh/impressum</loc>
+    <loc>https://codebricks.gmbh/impressum</loc>
     <priority>0.3</priority>
   </url>
   <url>
-    <loc>https://limex-solutions.gmbh/datenschutz</loc>
+    <loc>https://codebricks.gmbh/datenschutz</loc>
     <priority>0.3</priority>
   </url>
 </urlset>

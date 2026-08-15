@@ -9,12 +9,12 @@ import { stellen } from '@/data/karriereStellen';
 const Karriere = () => (
   <>
     <SEO
-      title="Karriere bei LIMEX Solutions"
-      description="Aktuelle Stellen bei LIMEX Solutions: Online-Tester, Entwickler, Berater und Integrationsspezialisten — remote und in Berlin."
+      title="Karriere bei Codebricks"
+      description="Aktuelle Stellen bei Codebricks: Framework- und Generator-Entwicklung, Sprachdesign, Consulting und Support — remote und in Berlin."
       path="/karriere"
     />
     <PageHero
-      eyebrow="Karriere · bei LIMEX Solutions"
+      eyebrow="Karriere · bei Codebricks"
       title={<>Arbeiten Sie an Software, die <span className="text-[#2563EB]">tatsächlich benutzt</span> wird.</>}
       intro="Wir sind ein festes Team in Berlin. Kein Wachstum um jeden Preis, kein Hire-and-Fire, keine anonymen Sprint-Reviews. Wenn Sie handwerkliches Können und Verantwortung schätzen, sollten wir sprechen."
       breadcrumb={[{ label: 'Start', href: '/' }, { label: 'Karriere' }]}
