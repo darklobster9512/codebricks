@@ -37,7 +37,7 @@ const ModellgetriebeneEntwicklung = () => (
     />
 
     <Section index="01" eyebrow="Bausteine" title="Fünf Disziplinen, die MDD im Alltag tragfähig machen.">
-      <div className="grid gap-4 md:grid-cols-2">
+      <div className="grid gap-3 sm:gap-4 md:grid-cols-2">
         {bausteine.map(([t, d]) => (
           <div key={t} className="tile tile-hover p-7">
             <h3 className="text-xl font-semibold text-[#0F1B3D]">{t}</h3>
@@ -74,7 +74,7 @@ const ModellgetriebeneEntwicklung = () => (
     />
 
     <Section index="03" eyebrow="Vorgehen" title="Fünf Phasen bis zum produktiven Durchstich.">
-      <div className="grid gap-4 md:grid-cols-5">
+      <div className="grid gap-3 sm:gap-4 md:grid-cols-5">
         {phasen.map(([n, t, d]) => (
           <div key={n} className="tile tile-hover p-6">
             <p className="font-mono text-xs text-[#3B82F6]">{n}</p>

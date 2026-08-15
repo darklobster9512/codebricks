@@ -38,7 +38,7 @@ const Plattform = () => (
     />
 
     <Section index="01" eyebrow="Bausteine" title="Fünf Komponenten, eine durchgängige Werkzeugkette.">
-      <div className="divide-y divide-[#E8ECF1] rounded-[1.25rem] border border-[#E8ECF1] bg-white px-6">
+      <div className="divide-y divide-[#E8ECF1] rounded-[1.25rem] border border-[#E8ECF1] bg-white px-5 sm:px-6">
         {bausteine.map(([t, d]) => (
           <div key={t} className="grid gap-6 md:grid-cols-12 py-8">
             <div className="md:col-span-4 text-lg font-medium text-[#0F1B3D]">{t}</div>
@@ -97,7 +97,7 @@ const Plattform = () => (
     />
 
     <Section index="04" eyebrow="Häufige Fragen" title="Was Entwicklungsleitungen vor der Evaluierung fragen.">
-      <div className="divide-y divide-[#E8ECF1] rounded-[1.25rem] border border-[#E8ECF1] bg-white px-6">
+      <div className="divide-y divide-[#E8ECF1] rounded-[1.25rem] border border-[#E8ECF1] bg-white px-5 sm:px-6">
         {faqs.map(([q, a]) => (
           <details key={q} className="group py-6">
             <summary className="flex cursor-pointer items-center justify-between text-base font-medium text-[#0F1B3D]">
