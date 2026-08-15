@@ -48,8 +48,9 @@ const techs = ['Java', '.NET', 'TypeScript', 'PostgreSQL', 'Xtext', 'EMF', 'Open
 const Start = () => (
   <>
     <SEO
-      title="Codebricks – Frameworks für modellgetriebene Softwareentwicklung"
-      description="Codebricks entwickelt neuartige Frameworks und Lösungen für die modellgetriebene Softwareentwicklung — inklusive Vertrieb, Einführung, Schulung und Support. Aus Berlin."
+      title="Codebricks – modellgetriebene Softwareentwicklung"
+      description="Frameworks für modellgetriebene Softwareentwicklung aus Berlin: Modellierung, Codegenerierung, Einführung, Schulung und Support."
+      brand={false}
       path="/"
     />
     <HeroFull />
