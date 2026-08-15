@@ -9,7 +9,7 @@ export default defineConfig(() => ({
     hmr: {
       overlay: false,
     },
-    allowedHosts: ["limex.solutions", "www.limex.solutions", "limex-solutions.gmbh", "www.limex-solutions.gmbh"],
+    allowedHosts: ["codebricks.gmbh", "www.codebricks.gmbh", ".lovable.app"],
   },
   plugins: [react()],
   resolve: {
