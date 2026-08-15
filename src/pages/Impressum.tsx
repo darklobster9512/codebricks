@@ -5,8 +5,8 @@ import SEO from '@/components/limex/SEO';
 const Impressum = () => (
   <>
     <SEO
-      title="Impressum | Codebricks"
-      description="Angaben gemäß § 5 TMG — Codebricks GmbH, Leipziger Platz 15, 10117 Berlin."
+      title="Impressum"
+      description="Angaben gemäß § 5 TMG — Codebricks GmbH, Leipziger Platz 15, 10117 Berlin, HRB 258971 B."
       path="/impressum"
     />
     <PageHero title="Impressum" breadcrumb={[{ label: 'Start', href: '/' }, { label: 'Impressum' }]} />

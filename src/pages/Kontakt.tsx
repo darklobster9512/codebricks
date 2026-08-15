@@ -28,8 +28,9 @@ const Kontakt = () => {
   return (
     <>
       <SEO
-        title="Kontakt | Codebricks"
-        description="Direkter Draht zum Codebricks-Team in Berlin: Erstgespräch anfragen, Angebot einholen, Zusammenarbeit starten."
+        title="Kontakt – Codebricks GmbH Berlin"
+        description="Direkter Draht nach Berlin Mitte: Demo vereinbaren, Angebot anfragen oder Fragen zum Framework klären. Telefon, Mail und Formular."
+        brand={false}
         path="/kontakt"
       />
       <PageHero

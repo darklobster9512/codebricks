@@ -74,8 +74,9 @@ const Bewerbung = () => {
   return (
     <>
       <SEO
-        title="Bewerbung | Codebricks"
-        description="Bewirb dich in wenigen Schritten bei Codebricks in Berlin."
+        title="Jetzt bei Codebricks bewerben"
+        description="In wenigen Schritten bewerben: Lebenslauf hochladen, Stelle wählen, absenden. Wir melden uns kurzfristig zurück."
+        brand={false}
         path="/karriere/bewerbung"
       />
       <PageHero

@@ -30,8 +30,8 @@ const sla = [
 const Services = () => (
   <>
     <SEO
-      title="Services & Lizenzen | Codebricks GmbH"
-      description="Einführung, Generator-Anpassung, Schulung, Migration und Support rund um das Codebricks-Framework — inklusive Lizenzmodelle und SLA."
+      title="Services, Schulung & Lizenzen"
+      description="Einführung, Generator-Anpassung, Migration, Schulung und Support zum Codebricks-Framework — mit klaren Lizenzmodellen und SLA."
       path="/services"
     />
     <PageHero

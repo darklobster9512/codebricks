@@ -8,8 +8,8 @@ const H2 = ({ children }: { children: string }) => (
 const Datenschutz = () => (
   <>
     <SEO
-      title="Datenschutz | Codebricks"
-      description="Datenschutzerklärung der Codebricks GmbH gemäß DSGVO."
+      title="Datenschutzerklärung"
+      description="Wie die Codebricks GmbH personenbezogene Daten gemäß DSGVO verarbeitet: Zwecke, Rechtsgrundlagen, Speicherdauer und Ihre Rechte."
       path="/datenschutz"
     />
     <PageHero title="Datenschutzerklärung" breadcrumb={[{ label: 'Start', href: '/' }, { label: 'Datenschutz' }]} />

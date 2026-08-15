@@ -9,8 +9,9 @@ import { stellen } from '@/data/karriereStellen';
 const Karriere = () => (
   <>
     <SEO
-      title="Karriere bei Codebricks"
-      description="Aktuelle Stellen bei Codebricks: Framework- und Generator-Entwicklung, Sprachdesign, Consulting und Support — remote und in Berlin."
+      title="Karriere bei Codebricks – Jobs in Berlin & remote"
+      description="Offene Stellen in Framework- und Generator-Entwicklung, Sprachdesign, Consulting und Support — in Berlin Mitte oder remote."
+      brand={false}
       path="/karriere"
     />
     <PageHero

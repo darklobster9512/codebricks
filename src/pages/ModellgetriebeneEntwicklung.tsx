@@ -25,8 +25,8 @@ const phasen = [
 const ModellgetriebeneEntwicklung = () => (
   <>
     <SEO
-      title="Modellgetriebene Entwicklung | Codebricks GmbH"
-      description="Modellgetriebene Softwareentwicklung in der Praxis: Domänenmodelle, eigene DSLs, Codegenerierung und die schrittweise Ablösung von Altsystemen."
+      title="Modellgetriebene Entwicklung (MDD) in der Praxis"
+      description="Domänenmodelle, eigene DSLs, Codegenerierung und Roundtrip — wie MDD Altsysteme schrittweise ablöst und Entwicklung beschleunigt."
       path="/modellgetriebene-entwicklung"
     />
     <PageHero

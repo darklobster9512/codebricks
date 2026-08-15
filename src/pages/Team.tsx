@@ -167,8 +167,9 @@ const PeopleRows = ({ people }: { people: Person[] }) => (
 const Team = () => (
   <>
     <SEO
-      title="Team | Codebricks GmbH"
-      description="Die Menschen hinter Codebricks: Geschäftsführung, Betrieb & Finanzen, People & Community, Technologie, Qualitätssicherung und Beratung."
+      title="Team – die Menschen hinter Codebricks"
+      description="Geschäftsführung, Framework-Entwicklung, Sprachdesign, Qualitätssicherung und Beratung: das Team der Codebricks GmbH in Berlin."
+      brand={false}
       path="/team"
     />
     <PageHero
