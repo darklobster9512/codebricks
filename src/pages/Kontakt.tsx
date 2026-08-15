@@ -100,7 +100,7 @@ const Kontakt = () => {
                   </div>
                   <div className="flex gap-3">
                     <Phone size={18} className="text-[#64748B] mt-0.5 shrink-0" />
-                    <a href="tel:+4930123456789" className="text-[#0F1B3D] hover:text-[#3B82F6]">030 123456789</a>
+                    <a href="tel:+4930692096720" className="text-[#0F1B3D] hover:text-[#3B82F6]">030 692096720</a>
                   </div>
                   <div className="flex gap-3">
                     <Clock size={18} className="text-[#64748B] mt-0.5 shrink-0" />
