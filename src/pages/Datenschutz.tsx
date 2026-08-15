@@ -22,8 +22,8 @@ const Datenschutz = () => (
 
         <H2>1. Verantwortlicher</H2>
         <p>
-          Codebricks GmbH, Leipziger Platz 15, 10117 Berlin, vertreten durch die Geschäftsführer Ivan Kulinstev und
-          Alla Lehnert. Kontakt: <a href="mailto:kontakt@codebricks-gmbh.de" className="text-[#3B82F6] hover:underline">kontakt@codebricks-gmbh.de</a>.
+          Codebricks GmbH, Leipziger Platz 15, 10117 Berlin, vertreten durch den Geschäftsführer Erik Andreas Hübner.
+          Kontakt: <a href="mailto:kontakt@codebricks-gmbh.de" className="text-[#3B82F6] hover:underline">kontakt@codebricks-gmbh.de</a>.
         </p>
 
         <H2>2. Erhebung beim Besuch der Website</H2>
