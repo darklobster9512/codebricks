@@ -87,7 +87,7 @@ const Bewerbung = () => {
 
       <section className="bg-[#FAFBFC]">
         <div className="mx-auto max-w-3xl px-6 py-16">
-          <form onSubmit={handleSubmit} className="space-y-8">
+          <form onSubmit={handleSubmit} className="tile mx-auto max-w-3xl space-y-8 p-8 lg:p-12">
             <div className="grid gap-6 md:grid-cols-2">
               <div className="space-y-2">
                 <Label htmlFor="vorname">Vorname *</Label>

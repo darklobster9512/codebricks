@@ -242,6 +242,10 @@
   color: hsl(var(--primary-glow));
   font-family: 'Space Grotesk', sans-serif;
 }
+.dot-grid-ink {
+  background-image: radial-gradient(hsl(0 0% 100% / 0.10) 1px, transparent 1px);
+  background-size: 20px 20px;
+}
 .dot-grid {
   background-image: radial-gradient(hsl(224 40% 20% / 0.10) 1px, transparent 1px);
   background-size: 20px 20px;
