@@ -1,47 +1,42 @@
 import PageHero from '@/components/limex/PageHero';
 import Section from '@/components/limex/Section';
+import SplitSection from '@/components/limex/SplitSection';
 import CTABand from '@/components/limex/CTABand';
 import SEO from '@/components/limex/SEO';
 import { ChevronRight } from 'lucide-react';
+import codeLaptop from '@/assets/photos/code-laptop.jpg';
+import generatedCode from '@/assets/photos/generated-code.jpg';
 
 const bausteine = [
-  ['IT-Strategie', 'Zielbild, Governance, Sourcing- und Plattform-Entscheidungen im Kontext Ihrer Unternehmensstrategie.'],
-  ['Cloud-Transformation', 'Bewertung, Migrationspfade und Betriebsmodelle für AWS, Azure und Google Cloud — inklusive FinOps.'],
-  ['Security & Compliance', 'Reifegradanalysen nach BSI-Grundschutz und ISO 27001-Vorbereitung, DSGVO-Auditierung, IAM-Konzepte.'],
-  ['Prozessdigitalisierung', 'Aufnahme, Modellierung und Automatisierung von Kernprozessen — von Angebot bis Abrechnung.'],
-  ['IT-Due-Diligence', 'Technische Prüfungen bei M&A-Vorhaben, Post-Merger-Integration und Carve-outs.'],
-];
-
-const phasen = [
-  ['01', 'Discovery', 'Interviews, Sichtung Ihrer IT-Landschaft und ein 360°-Bild in 2 Wochen.'],
-  ['02', 'Analyse', 'Bewertung nach Nutzen, Risiko und Aufwand. Handlungsfelder werden priorisiert.'],
-  ['03', 'Zielbild', 'Referenzarchitektur, Roadmap und Business Case — belastbar für Vorstand und CFO.'],
-  ['04', 'Umsetzung', 'Wir begleiten oder liefern — je nach Modell mit unseren Engineers oder mit Ihrem Team.'],
-  ['05', 'Betrieb', 'Übergabe an den Regelbetrieb inklusive Runbooks, KPIs und einer klaren Eskalationskette.'],
+  ['Modell-Editor', 'Fachliche Modelle in einer grafischen und textuellen Oberfläche erfassen — versionierbar, reviewfähig, im Git-Repository abgelegt.'],
+  ['Metamodell-Kern', 'Ein erweiterbares Metamodell beschreibt Entitäten, Regeln, Zustände und Berechtigungen Ihrer Domäne — herstellerunabhängig und offen dokumentiert.'],
+  ['Generatoren', 'Aus dem Modell entstehen Datenbankschema, API, Validierungen, Testgerüste und Oberflächen. Templates sind offen und anpassbar.'],
+  ['Laufzeitbibliotheken', 'Schlanke Runtime für Java, .NET und TypeScript: Persistenz, Regelauswertung, Auditing — nur das, was generierter Code wirklich braucht.'],
+  ['Roundtrip & Migration', 'Modelländerungen erzeugen versionierte Migrationen. Handgeschriebene Erweiterungen bleiben bei jedem Regenerieren erhalten.'],
 ];
 
 const faqs = [
-  ['Ab welcher Größe lohnt sich eine Beratung?', 'Wir arbeiten mit Kunden ab ~50 Mitarbeitenden. Kleinere Unternehmen beraten wir punktuell auf Tagessatzbasis.'],
-  ['Wie schnell können Sie starten?', 'Ein Discovery-Slot ist üblicherweise binnen 2–3 Wochen verfügbar. Notfall-Assessments kürzer.'],
-  ['Sind Sie herstellerunabhängig?', 'Ja. Wir haben keine Reseller-Provisionen und keine bevorzugten Software-Partner.'],
-  ['Wie rechnen Sie ab?', 'Festpreis für definierte Ergebnisse, Time & Material für offene Discovery-Phasen. Jede Rechnung ist projekt- und stundenbasiert nachvollziehbar.'],
+  ['Erzeugt Codebricks Code, den man lesen kann?', 'Ja. Der generierte Code folgt den gleichen Konventionen wie handgeschriebener Code, ist formatiert, kommentiert und kann ohne unser Framework weiterentwickelt werden.'],
+  ['Was passiert mit unserem eigenen Code?', 'Erweiterungspunkte und geschützte Bereiche bleiben bei jeder Regenerierung unverändert. Es gibt kein Überschreiben ohne Vorwarnung.'],
+  ['Gibt es ein Vendor-Lock-in?', 'Nein. Modelle liegen in einem offenen, dokumentierten Format vor, die Templates gehören Ihnen. Auch nach Vertragsende bleibt der generierte Code lauffähig.'],
+  ['Wie wird lizenziert?', 'Pro Entwicklerplatz und Jahr, mit optionalem Wartungs- und Supportvertrag. Für Evaluierungen gibt es eine kostenfreie 60-Tage-Lizenz.'],
 ];
 
-const Beratung = () => (
+const Plattform = () => (
   <>
     <SEO
-      title="IT-Beratung | LIMEX Solutions"
-      description="Strategische IT-Beratung: Architektur, Prozesse, Cloud und Digitalisierung — herstellerneutral und umsetzungsstark aus Berlin."
-      path="/beratung"
+      title="Plattform | Codebricks GmbH"
+      description="Das Codebricks-Framework: Metamodell, Modell-Editor, Generatoren und Laufzeitbibliotheken für die modellgetriebene Softwareentwicklung."
+      path="/plattform"
     />
     <PageHero
-      eyebrow="Leistung · Beratung"
-      title={<>IT-Beratung mit <span className="text-[#2563EB]">betriebswirtschaftlichem</span> Blick.</>}
-      intro="Wir beraten Geschäftsführungen und IT-Verantwortliche im deutschen Mittelstand. Der Anspruch: jede Empfehlung muss sich in Euro, Stunden oder Risiko messen lassen."
-      breadcrumb={[{ label: 'Start', href: '/' }, { label: 'Beratung' }]}
+      eyebrow="Produkt · Plattform"
+      title={<>Ein Framework, das aus Modellen <span className="text-[#2563EB]">lesbaren Code</span> macht.</>}
+      intro="Codebricks ist kein Baukasten für Klickstrecken, sondern eine Werkzeugkette für Entwicklungsteams: Modell, Generator, Laufzeit — offen, versionierbar und ohne Lock-in."
+      breadcrumb={[{ label: 'Start', href: '/' }, { label: 'Plattform' }]}
     />
 
-    <Section index="01" eyebrow="Bausteine" title="Fünf Bereiche, in denen wir tief zu Hause sind.">
+    <Section index="01" eyebrow="Bausteine" title="Fünf Komponenten, eine durchgängige Werkzeugkette.">
       <div className="divide-y divide-[#E6ECF5] border-y border-[#E6ECF5]">
         {bausteine.map(([t, d]) => (
           <div key={t} className="grid gap-6 md:grid-cols-12 py-8">
@@ -52,19 +47,55 @@ const Beratung = () => (
       </div>
     </Section>
 
-    <Section index="02" eyebrow="Vorgehen" title="Fünf Phasen, ein roter Faden." bg="muted">
-      <div className="grid gap-6 md:grid-cols-5">
-        {phasen.map(([n, t, d]) => (
-          <div key={n} className="border border-[#E6ECF5] bg-white p-6">
-            <p className="font-mono text-xs text-[#2563EB]">{n}</p>
-            <h3 className="mt-4 text-base font-semibold text-[#0B1220]">{t}</h3>
-            <p className="mt-2 text-sm leading-relaxed text-[#5B6B85]">{d}</p>
-          </div>
-        ))}
-      </div>
-    </Section>
+    <SplitSection
+      index="02"
+      eyebrow="Architektur"
+      title="Vom Metamodell bis zum lauffähigen Service."
+      body={
+        <>
+          <p>
+            Das Metamodell beschreibt Ihre Fachlichkeit einmal. Aus dieser einen Quelle
+            erzeugen die Generatoren Datenmodell, Schnittstellen, Validierungen und
+            Testgerüste — konsistent über alle Zielplattformen hinweg.
+          </p>
+          <p>
+            Änderungen werden im Modell gemacht, nicht an fünf Stellen im Code. Der
+            Generator übernimmt den Rest und protokolliert jede Anpassung nachvollziehbar.
+          </p>
+        </>
+      }
+      bullets={[
+        'Eine Quelle der Wahrheit für Fachlichkeit und Struktur',
+        'Zielplattformen: Java, .NET, TypeScript, PostgreSQL',
+        'Generierte Migrationen statt manueller SQL-Skripte',
+      ]}
+      image={codeLaptop}
+      imageAlt="Entwicklerin arbeitet an generiertem Quellcode auf einem Laptop"
+      bg="muted"
+    />
 
-    <Section index="03" eyebrow="Häufige Fragen" title="Was Kunden vor dem ersten Termin fragen.">
+    <SplitSection
+      index="03"
+      eyebrow="Codequalität"
+      title="Generierter Code, den Ihr Team ohne uns weiterpflegen kann."
+      body={
+        <p>
+          Wir messen die Qualität unserer Generatoren daran, ob ein Entwickler ohne
+          Framework-Kenntnisse den erzeugten Code versteht. Keine Reflection-Magie, keine
+          undurchsichtigen Laufzeitcontainer, keine generierten Dateien ohne Struktur.
+        </p>
+      }
+      bullets={[
+        'Formatierung nach Ihren Team-Konventionen',
+        'Statische Analyse und Tests laufen auf generiertem Code',
+        'Offene Templates — anpassbar in Ihrem eigenen Repository',
+      ]}
+      image={generatedCode}
+      imageAlt="Bildschirm mit strukturiertem, farblich hervorgehobenem Quellcode"
+      imageSide="left"
+    />
+
+    <Section index="04" eyebrow="Häufige Fragen" title="Was Entwicklungsleitungen vor der Evaluierung fragen.">
       <div className="divide-y divide-[#E6ECF5] border-y border-[#E6ECF5]">
         {faqs.map(([q, a]) => (
           <details key={q} className="group py-6">
@@ -79,13 +110,13 @@ const Beratung = () => (
     </Section>
 
     <CTABand
-      title="Bereit für ein ehrliches Discovery?"
-      intro="Zwei Wochen, drei Interviews, ein belastbares Zielbild. Anschließend entscheiden Sie in Ruhe."
-      primaryLabel="Discovery anfragen"
-      secondaryLabel="Softwareentwicklung"
-      secondaryTo="/softwareentwicklung"
+      title="Testen Sie Codebricks 60 Tage kostenfrei."
+      intro="Wir richten die Evaluierungslizenz ein, modellieren gemeinsam eine erste Domäne und begleiten Sie durch den ersten Generatorlauf."
+      primaryLabel="Evaluierung starten"
+      secondaryLabel="Modellgetriebene Entwicklung"
+      secondaryTo="/modellgetriebene-entwicklung"
     />
   </>
 );
 
-export default Beratung;
+export default Plattform;
