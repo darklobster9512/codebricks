@@ -27,7 +27,7 @@ const Header = () => {
           <img
             src={logo}
             alt="Codebricks GmbH"
-            className="h-8 w-auto select-none"
+            className="h-11 w-auto select-none"
             draggable={false}
             onContextMenu={(e) => e.preventDefault()}
           />
