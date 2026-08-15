@@ -19,7 +19,7 @@ const KarriereDetail = () => {
   return (
     <>
       <SEO
-        title={`${stelle.titel} | Karriere | LIMEX Solutions`}
+        title={`${stelle.titel} | Karriere | Codebricks`}
         description={stelle.kurzbeschreibung}
         path={`/karriere/${stelle.slug}`}
       />
@@ -73,7 +73,7 @@ const KarriereDetail = () => {
                 >
                   Jetzt bewerben <ArrowRight size={16} />
                 </Link>
-                <p className="text-xs text-[#5B6B85]">Direkter Ansprechpartner: <a href="mailto:kontakt@limex-solutions.net" className="text-[#2563EB] hover:underline">kontakt@limex-solutions.net</a></p>
+                <p className="text-xs text-[#5B6B85]">Direkter Ansprechpartner: <a href="mailto:kontakt@codebricks-gmbh.de" className="text-[#2563EB] hover:underline">kontakt@codebricks-gmbh.de</a></p>
               </div>
             </aside>
           </div>

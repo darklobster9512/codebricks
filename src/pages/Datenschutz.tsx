@@ -8,22 +8,22 @@ const H2 = ({ children }: { children: string }) => (
 const Datenschutz = () => (
   <>
     <SEO
-      title="Datenschutz | LIMEX Solutions"
-      description="Datenschutzerklärung der LIMEX Solutions GmbH gemäß DSGVO."
+      title="Datenschutz | Codebricks"
+      description="Datenschutzerklärung der Codebricks GmbH gemäß DSGVO."
       path="/datenschutz"
     />
     <PageHero title="Datenschutzerklärung" breadcrumb={[{ label: 'Start', href: '/' }, { label: 'Datenschutz' }]} />
     <section className="border-t border-[#E6ECF5] bg-white">
       <div className="mx-auto max-w-3xl px-6 py-16 text-sm leading-relaxed text-[#0B1220] space-y-4">
         <p>
-          Wir freuen uns über Ihr Interesse an der LIMEX Solutions GmbH. Der Schutz Ihrer personenbezogenen Daten ist uns ein
+          Wir freuen uns über Ihr Interesse an der Codebricks GmbH. Der Schutz Ihrer personenbezogenen Daten ist uns ein
           zentrales Anliegen. Nachfolgend informieren wir Sie über die Verarbeitung Ihrer Daten beim Besuch dieser Website.
         </p>
 
         <H2>1. Verantwortlicher</H2>
         <p>
-          LIMEX Solutions GmbH, Blankenhainer Str. 5, 12249 Berlin, vertreten durch die Geschäftsführer Ivan Kulinstev und
-          Alla Lehnert. Kontakt: <a href="mailto:kontakt@limex-solutions.net" className="text-[#2563EB] hover:underline">kontakt@limex-solutions.net</a>.
+          Codebricks GmbH, Leipziger Platz 15, 10117 Berlin, vertreten durch die Geschäftsführer Ivan Kulinstev und
+          Alla Lehnert. Kontakt: <a href="mailto:kontakt@codebricks-gmbh.de" className="text-[#2563EB] hover:underline">kontakt@codebricks-gmbh.de</a>.
         </p>
 
         <H2>2. Erhebung beim Besuch der Website</H2>

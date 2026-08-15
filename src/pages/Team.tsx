@@ -31,7 +31,7 @@ const bereiche: Bereich[] = [
         name: 'Ivan Kulinstev',
         role: 'Geschäftsführer',
         focus: 'Strategie & Technologie',
-        text: 'Verantwortet die technische Ausrichtung von LIMEX, prüft Architekturentwürfe vor dem Start und begleitet kritische Migrationen persönlich.',
+        text: 'Verantwortet die technische Ausrichtung von Codebricks, prüft Architekturentwürfe vor dem Start und begleitet kritische Migrationen persönlich.',
       },
       {
         name: 'Alla Lehnert',
@@ -173,13 +173,13 @@ const PeopleRows = ({ people }: { people: Person[] }) => (
 const Team = () => (
   <>
     <SEO
-      title="Team | LIMEX Solutions GmbH"
-      description="Die Menschen hinter LIMEX Solutions: Geschäftsführung, Betrieb & Finanzen, People & Community, Technologie, Qualitätssicherung und Beratung."
+      title="Team | Codebricks GmbH"
+      description="Die Menschen hinter Codebricks: Geschäftsführung, Betrieb & Finanzen, People & Community, Technologie, Qualitätssicherung und Beratung."
       path="/team"
     />
     <PageHero
       eyebrow="Unternehmen · Team"
-      title={<>Die Menschen hinter <span className="text-[#2563EB]">LIMEX</span>.</>}
+      title={<>Die Menschen hinter <span className="text-[#2563EB]">Codebricks</span>.</>}
       intro="Seit 2013 arbeiten wir aus Berlin heraus an IT-Beratung, Softwareentwicklung und Systemintegration. Sechs Bereiche, klare Zuständigkeiten — und immer ein Name statt einer Ticketnummer."
       breadcrumb={[{ label: 'Start', href: '/' }, { label: 'Team' }]}
     />
