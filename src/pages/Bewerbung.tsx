@@ -85,7 +85,7 @@ const Bewerbung = () => {
         breadcrumb={[{ label: 'Start', href: '/' }, { label: 'Karriere', href: '/karriere' }, { label: 'Bewerbung' }]}
       />
 
-      <section className="border-t border-[#E8ECF1] bg-white">
+      <section className="bg-[#FAFBFC]">
         <div className="mx-auto max-w-3xl px-6 py-16">
           <form onSubmit={handleSubmit} className="space-y-8">
             <div className="grid gap-6 md:grid-cols-2">

@@ -34,7 +34,7 @@ const KarriereDetail = () => {
         ]}
       />
 
-      <section className="border-t border-[#E8ECF1] bg-white">
+      <section className="bg-[#FAFBFC]">
         <div className="mx-auto max-w-7xl px-6 py-20">
           <div className="grid gap-12 lg:grid-cols-12">
             <div className="lg:col-span-8 space-y-12">
@@ -59,7 +59,7 @@ const KarriereDetail = () => {
             </div>
 
             <aside className="lg:col-span-4">
-              <div className="lg:sticky lg:top-24 border border-[#E8ECF1] bg-[#FAFBFC] p-6 space-y-5">
+              <div className="tile lg:sticky lg:top-28 p-7 space-y-5">
                 <p className="text-[11px] font-mono uppercase tracking-widest text-[#3B82F6]">Eckdaten</p>
                 <ul className="space-y-4 text-sm">
                   <li className="flex gap-3 items-start"><MapPin size={16} className="text-[#64748B] mt-0.5" /><span><span className="block text-[11px] uppercase tracking-widest text-[#64748B]">Standort</span><span className="text-[#0F1B3D]">{stelle.standort}</span></span></li>
