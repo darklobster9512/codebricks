@@ -2,10 +2,10 @@ import { Link } from 'react-router-dom';
 import logo from '@/assets/logo-codebricks.png';
 
 const Footer = () => (
-  <footer className="bg-[#FAFBFC] px-4 pb-4">
-    <div className="mx-auto max-w-6xl overflow-hidden rounded-[2rem] bg-[#0F1B3D] text-white">
-      <div className="px-8 py-14 lg:px-14">
-        <p className="max-w-3xl font-display text-[30px] md:text-[42px] font-semibold leading-[1.08] tracking-[-0.03em]">
+  <footer className="bg-[#FAFBFC] px-3 pb-3 sm:px-4 sm:pb-4">
+    <div className="mx-auto max-w-6xl overflow-hidden rounded-[1.5rem] bg-[#0F1B3D] text-white sm:rounded-[2rem]">
+      <div className="px-6 py-10 sm:px-8 sm:py-14 lg:px-14">
+        <p className="max-w-3xl font-display text-[26px] sm:text-[30px] md:text-[42px] font-semibold leading-[1.1] tracking-[-0.03em]">
           Modelle statt Copy-Paste — <span className="text-[#7DB0FB]">Software, die mitwächst.</span>
         </p>
         <Link
@@ -15,7 +15,7 @@ const Footer = () => (
           Gespräch vereinbaren
         </Link>
 
-        <div className="mt-14 grid gap-10 border-t border-white/10 pt-10 md:grid-cols-12">
+        <div className="mt-10 grid gap-8 border-t border-white/10 pt-8 sm:mt-14 sm:gap-10 sm:pt-10 md:grid-cols-12">
           <div className="md:col-span-4">
             <img
               src={logo}
@@ -68,7 +68,7 @@ const Footer = () => (
           </div>
         </div>
 
-        <div className="mt-12 flex flex-col gap-4 border-t border-white/10 pt-6 text-xs text-[#94A3B8] md:flex-row md:items-center md:justify-between">
+        <div className="mt-10 flex flex-col gap-4 border-t border-white/10 pt-6 text-[11px] leading-relaxed text-[#94A3B8] sm:mt-12 sm:text-xs md:flex-row md:items-center md:justify-between">
           <p>© {new Date().getFullYear()} Codebricks GmbH · HRB 258971 B · USt-ID DE458097140</p>
           <div className="flex gap-6">
             <Link to="/impressum" className="hover:text-white">Impressum</Link>
