@@ -1,23 +1,28 @@
-# Logo wirkt gleich groß — Ursache und Fix
+# Geschäftsführung ändern + Team neu besetzen
 
-## Befund
-Die Höhenänderung (32 px → 44 px) ist in Header und Footer bereits im Code aktiv. Sichtbar ändert sich trotzdem kaum etwas, weil die Logodatei selbst viel leeren Rand hat:
+## Geschäftsführung
+Einziger Geschäftsführer: **Erik Andreas Hübner**. Alla Lehnert entfällt komplett.
 
-- Datei: 1536 × 512 px
-- Tatsächlicher Schriftzug darin: nur 1245 × 168 px, mittig platziert
+Betroffen:
+- `src/pages/Impressum.tsx`: "Geschäftsführer: Erik Andreas Hübner"
+- `src/pages/Datenschutz.tsx`: "vertreten durch den Geschäftsführer Erik Andreas Hübner"
+- `src/pages/Team.tsx`: Bereich 01 zeigt nur noch eine Person; Titel/Intro angepasst ("Eine Person, die jedes Projekt kennt.")
 
-Der Schriftzug füllt also nur rund ein Drittel der Bildhöhe. Bei 44 px Bildhöhe ist die Wortmarke real nur ca. 15 px hoch — deshalb der Eindruck "nichts passiert".
+## Teamseite — neue Besetzung
+Alle übrigen Personen bekommen neue Namen. Geschlechterverteilung bleibt identisch (weiblich bleibt weiblich, männlich bleibt männlich), Bereiche bleiben bestehen, Rollen und Fokus werden leicht auf das MDD-/Plattform-Profil geschärft.
 
-## Lösung
-1. Transparenten Rand aus `src/assets/logo-codebricks.png` entfernen (auf den Inhalt zuschneiden, minimaler gleichmäßiger Rand). Dadurch entspricht die CSS-Höhe endlich der sichtbaren Höhe.
-2. Höhen danach neu justieren, damit die Optik stimmt und nichts umbricht:
-   - Header: Logo ca. 22–24 px sichtbare Höhe (Pill-Navbar bleibt unverändert hoch)
-   - Footer: Logo ca. 28–30 px sichtbare Höhe
-3. Favicon `public/favicon.png` bleibt unangetastet.
-4. Kontrolle per Screenshot (Desktop + Mobile), dass Header-Pill, Nav-Items und CTA-Button unverändert sitzen.
+| Bereich | alt | neu (gleiches Geschlecht) |
+|---|---|---|
+| 01 Geschäftsführung | Ivan Kulinstev, Alla Lehnert | Erik Andreas Hübner (allein) |
+| 02 Betrieb & Finanzen | Katharina Meinhardt (w), Tobias Reinhard (m) | Sandra Küpper (w), Daniel Ohlert (m) |
+| 03 People & Community | Markus Brenner (m), Julian Vollmer (m) | Philipp Radtke (m), Jonas Wiegand (m) |
+| 04 Technologie | Dr. Matthias Ehrenberg (m), Sebastian Kleinert (m) | Dr. Henning Aschoff (m), Roman Sedlacek (m) |
+| 05 QS & Testing | Franziska Neuhaus (w), Marek Ostrowski (m) | Miriam Falkenstein (w), Pawel Grabowski (m) |
+| 06 Kunden & Beratung | Christoph Wendland (m), Lena Brinkmeier (w) | Andreas Löffler (m), Nora Steinbach (w) |
+
+Rollen/Fokus/Beschreibungen werden dabei neu formuliert (z. B. "Lead Plattform-Architektur", "Lead Generator-Engineering", "Lead Testautomatisierung für generierte Systeme"), damit sie zum Framework-/MDD-Geschäft passen.
 
 ## Technisch
-- Zuschnitt der PNG-Datei auf die Inhaltsbox mit kleinem Padding, gleiche Datei, gleiche Importpfade — keine Codeänderung an Importen nötig.
-- `src/components/limex/Header.tsx`: `h-11` → passende Klasse (z. B. `h-6`) nach Zuschnitt.
-- `src/components/limex/Footer.tsx`: `h-11` → passende Klasse (z. B. `h-7`) nach Zuschnitt.
-- Sonst keine Änderungen.
+- Nur Textinhalte in `src/pages/Team.tsx` (Array `bereiche`), `src/pages/Impressum.tsx`, `src/pages/Datenschutz.tsx`.
+- Keine Layout-, Komponenten- oder Designänderungen.
+- Prüfung auf weitere Vorkommen der alten Namen im Projekt (Karriere-Daten, JSON-LD), damit nirgends ein alter Name stehen bleibt.
