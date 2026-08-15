@@ -10,7 +10,7 @@ const Karriere = () => (
   <>
     <SEO
       title="Karriere bei Codebricks"
-      description="Aktuelle Stellen bei Codebricks: Online-Tester, Entwickler, Berater und Integrationsspezialisten — remote und in Berlin."
+      description="Aktuelle Stellen bei Codebricks: Framework- und Generator-Entwicklung, Sprachdesign, Consulting und Support — remote und in Berlin."
       path="/karriere"
     />
     <PageHero
