@@ -23,7 +23,7 @@ const Impressum = () => (
         </div>
         <div>
           <h2 className="text-[11px] font-mono uppercase tracking-widest text-[#3B82F6]">Vertreten durch</h2>
-          <p className="mt-3">Geschäftsführer: Ivan Kulinstev, Alla Lehnert</p>
+          <p className="mt-3">Geschäftsführer: Erik Andreas Hübner</p>
         </div>
         <div>
           <h2 className="text-[11px] font-mono uppercase tracking-widest text-[#3B82F6]">Registereintrag</h2>
