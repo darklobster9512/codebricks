@@ -74,7 +74,7 @@ export const stellen: Stelle[] = [
     ],
     benefits: [
       '4-Tage-Woche möglich (bei entsprechendem Gehaltsmodell)',
-      'Modernes Büro in Berlin Lichtenrade + freies Remote-Modell',
+      'Modernes Büro in Berlin Mitte + freies Remote-Modell',
       'Individuelles Weiterbildungsbudget (3.000 €/Jahr)',
       'Betriebliche Altersvorsorge und Deutschlandticket',
       'Kein Bereitschaftsdienst außerhalb der geplanten Rufzeiten',

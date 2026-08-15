@@ -33,7 +33,7 @@ const Kontakt = () => {
         path="/kontakt"
       />
       <PageHero
-        eyebrow="Kontakt · Berlin Lichtenrade"
+        eyebrow="Kontakt · Berlin Mitte"
         title="Reden wir konkret."
         intro="Erzählen Sie uns kurz von Ihrer Situation. Wir antworten mit einem konkreten nächsten Schritt — nicht mit einer Broschüre."
         breadcrumb={[{ label: 'Start', href: '/' }, { label: 'Kontakt' }]}
@@ -41,8 +41,8 @@ const Kontakt = () => {
 
       <section className="border-t border-[#E8ECF1] bg-white">
         <div className="mx-auto max-w-7xl px-6 py-20">
-          <div className="grid gap-16 lg:grid-cols-12">
-            <form onSubmit={submit} className="lg:col-span-7 space-y-6">
+          <div className="grid gap-4 lg:grid-cols-12">
+            <form onSubmit={submit} className="tile lg:col-span-7 space-y-6 p-8 lg:p-10">
               <div className="grid gap-6 md:grid-cols-2">
                 <div className="space-y-2">
                   <Label htmlFor="name">Name *</Label>
@@ -76,14 +76,14 @@ const Kontakt = () => {
               <button
                 type="submit"
                 disabled={submitting}
-                className="inline-flex h-11 items-center gap-2 rounded-xl bg-[#3B82F6] px-6 text-sm font-medium text-white hover:bg-[#1D4ED8] disabled:opacity-50"
+                className="inline-flex h-11 items-center gap-2 rounded-full bg-[#0F1B3D] px-6 text-sm font-medium text-white hover:bg-[#3B82F6] disabled:opacity-50"
               >
                 {submitting ? <><Loader2 size={16} className="animate-spin" /> Wird gesendet…</> : <>Nachricht senden <Send size={16} /></>}
               </button>
             </form>
 
             <aside className="lg:col-span-5">
-              <div className="lg:sticky lg:top-24 border border-[#E8ECF1] bg-[#FAFBFC] p-8 space-y-6">
+              <div className="tile lg:sticky lg:top-28 p-8 space-y-6">
                 <p className="text-[11px] font-mono uppercase tracking-widest text-[#3B82F6]">Direktkontakt</p>
                 <div className="space-y-5 text-sm">
                   <div className="flex gap-3">
