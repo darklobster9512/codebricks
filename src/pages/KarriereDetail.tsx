@@ -35,9 +35,9 @@ const KarriereDetail = () => {
       />
 
       <section className="bg-[#FAFBFC]">
-        <div className="mx-auto max-w-7xl px-6 py-20">
-          <div className="grid gap-12 lg:grid-cols-12">
-            <div className="lg:col-span-8 space-y-12">
+        <div className="mx-auto max-w-6xl px-6 pb-16 lg:pb-24">
+          <div className="grid gap-4 lg:grid-cols-12">
+            <div className="tile lg:col-span-8 space-y-10 p-8 lg:p-10">
               <div>
                 <p className="text-[11px] font-mono uppercase tracking-widest text-[#3B82F6]">Über die Position</p>
                 <p className="mt-4 text-base leading-relaxed text-[#64748B]">{stelle.beschreibung}</p>
