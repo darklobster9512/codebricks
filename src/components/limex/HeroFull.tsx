@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
-import { ArrowRight, Star, Users, LineChart, Building2 } from 'lucide-react';
-import heroImage from '@/assets/hero-limex-team.jpg';
+import { ArrowRight, Star, Boxes, LineChart, Building2 } from 'lucide-react';
+import heroImage from '@/assets/photos/hero-office-meeting.jpg';
 
 const HeroFull = () => {
   const noDrag: React.HTMLAttributes<HTMLImageElement> = {
@@ -14,10 +14,10 @@ const HeroFull = () => {
         {/* Background image */}
         <img
           src={heroImage}
-          alt="Das LIMEX Solutions Team im Berliner Büro bei der Arbeit an einer Systemarchitektur"
+          alt="Das Codebricks-Team im Berliner Büro bei der Arbeit an einem Domänenmodell"
           className="absolute inset-0 h-full w-full object-cover object-center select-none"
-          width={1920}
-          height={1280}
+          width={960}
+          height={640}
           {...noDrag}
         />
 
@@ -35,20 +35,22 @@ const HeroFull = () => {
       {/* Content */}
       <div className="relative mx-auto flex min-h-[720px] max-w-7xl flex-col justify-center px-6 pt-28 pb-40 lg:min-h-[820px] lg:pt-32 lg:pb-48">
         <p className="text-xs font-medium uppercase tracking-[0.2em] text-white/80">
-          LIMEX Solutions <span className="mx-2 text-white/40">·</span> Berlin
+          Codebricks GmbH <span className="mx-2 text-white/40">·</span> Berlin
         </p>
 
         <h1 className="mt-6 max-w-4xl text-4xl font-semibold leading-[1.05] tracking-tight text-white sm:text-5xl md:text-6xl lg:text-[80px]">
-          IT-Beratung, die Ihre
+          Software entsteht aus
           <br />
-          Systeme wieder{' '}
-          <span className="italic font-light">liefern</span> lässt.
+          dem <span className="italic font-light">Modell</span>, nicht
+          <br />
+          aus dem Copy-Paste.
         </h1>
 
         <p className="mt-8 max-w-2xl text-lg leading-relaxed text-white/85 md:text-xl">
-          Individuelle Software, saubere Integration und strategische Beratung
-          für den deutschen Mittelstand — aus Berlin, mit festen Ansprechpartnern
-          und ohne PowerPoint-Nebel.
+          Codebricks entwickelt Frameworks und Werkzeuge für die modellgetriebene
+          Softwareentwicklung: fachliche Modelle, eigene DSLs und Generatoren, aus
+          denen produktionsreifer Code entsteht — inklusive Lizenzen, Einführung
+          und Support.
         </p>
 
         <div className="mt-10 flex flex-wrap gap-3">
@@ -56,14 +58,14 @@ const HeroFull = () => {
             to="/kontakt"
             className="inline-flex h-12 items-center gap-2 rounded-md bg-[#2563EB] px-6 text-sm font-medium text-white transition-colors hover:bg-[#1E3A8A]"
           >
-            Erstgespräch vereinbaren
+            Live-Demo vereinbaren
             <ArrowRight size={16} />
           </Link>
           <Link
-            to="/beratung"
+            to="/plattform"
             className="inline-flex h-12 items-center gap-2 rounded-md border border-white/40 bg-white/0 px-6 text-sm font-medium text-white backdrop-blur-sm transition-colors hover:bg-white hover:text-[#0B1220]"
           >
-            Leistungen ansehen
+            Plattform ansehen
           </Link>
         </div>
       </div>
@@ -74,36 +76,38 @@ const HeroFull = () => {
           {/* Festes Projektteam */}
           <div className="rounded-md border border-[#E6ECF5] bg-white p-6 shadow-sm">
             <p className="text-[11px] font-semibold uppercase tracking-widest text-[#2563EB]">
-              Festes Projektteam
+              Produktentwicklung
             </p>
             <div className="mt-5 flex items-center gap-3">
               <Building2 size={22} className="text-[#0B1220]" strokeWidth={1.75} />
               <p className="text-2xl font-semibold text-[#0B1220]">Berlin · DE</p>
             </div>
             <p className="mt-2 text-sm text-[#5B6B85]">
-              Ein erfahrenes Team in Berlin begleitet Ihr Projekt von Anfang an. Kein rotierendes Personal, keine anonymen Tickets.
+              Framework, Generatoren und Support kommen aus einer Hand — entwickelt
+              und gepflegt von unserem Team am Leipziger Platz.
             </p>
             <div className="mt-5 flex flex-wrap gap-2">
               <span className="rounded-sm bg-[#EFF4FF] px-2 py-1 text-[11px] font-medium text-[#1E3A8A]">
-                Inhabergeführt
+                Made in Germany
               </span>
               <span className="rounded-sm bg-[#EFF4FF] px-2 py-1 text-[11px] font-medium text-[#1E3A8A]">
-                Fester Ansprechpartner
+                Hersteller-Support
               </span>
             </div>
           </div>
 
-          {/* Referenzen */}
+          {/* Einsatz */}
           <div className="rounded-md border border-[#E6ECF5] bg-white p-6 shadow-sm">
             <p className="text-[11px] font-semibold uppercase tracking-widest text-[#2563EB]">
-              Referenzen
+              Im Einsatz
             </p>
             <div className="mt-5 flex items-center gap-3">
-              <Users size={22} className="text-[#0B1220]" strokeWidth={1.75} />
-              <p className="text-2xl font-semibold text-[#0B1220]">120+ Projekte</p>
+              <Boxes size={22} className="text-[#0B1220]" strokeWidth={1.75} />
+              <p className="text-2xl font-semibold text-[#0B1220]">40+ Modelle</p>
             </div>
             <p className="mt-2 text-sm text-[#5B6B85]">
-              Seit 2013 für Mittelstand, Industrie und öffentliche Hand.
+              Produktiv generierte Fachdomänen bei Kunden aus Industrie, Finanzwesen
+              und öffentlicher Hand.
             </p>
             <div className="mt-5 flex items-center gap-2">
               <div className="flex gap-0.5">
@@ -112,27 +116,28 @@ const HeroFull = () => {
                 ))}
               </div>
               <p className="text-sm font-medium text-[#0B1220]">4,8 / 5</p>
-              <p className="text-sm text-[#5B6B85]">Kundenzufriedenheit</p>
+              <p className="text-sm text-[#5B6B85]">Support-Bewertung</p>
             </div>
           </div>
 
-          {/* Erstanalyse */}
+          {/* Evaluierung */}
           <div className="group rounded-md border border-[#E6ECF5] bg-white p-6 shadow-sm">
             <p className="text-[11px] font-semibold uppercase tracking-widest text-[#2563EB]">
-              Kostenlose Erstanalyse
+              Kostenlose Evaluierung
             </p>
             <div className="mt-5 flex items-center gap-3">
               <LineChart size={22} className="text-[#0B1220]" strokeWidth={1.75} />
-              <p className="text-lg font-semibold text-[#0B1220]">IT-Bestandsaufnahme</p>
+              <p className="text-lg font-semibold text-[#0B1220]">Modell-Piloten</p>
             </div>
             <p className="mt-2 text-sm text-[#5B6B85]">
-              Wir prüfen Ihre Systemlandschaft und zeigen Ihnen den nächsten sinnvollen Schritt — unverbindlich.
+              Wir modellieren eine Ihrer Fachdomänen und zeigen den generierten Code —
+              unverbindlich, in zwei Wochen.
             </p>
             <Link
               to="/kontakt"
               className="mt-5 inline-flex items-center gap-1.5 text-sm font-medium text-[#2563EB] hover:text-[#1E3A8A]"
             >
-              Analyse anfragen
+              Pilot anfragen
               <ArrowRight size={14} className="transition-transform group-hover:translate-x-0.5" />
             </Link>
           </div>
