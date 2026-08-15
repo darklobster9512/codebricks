@@ -9,7 +9,7 @@ const HeroSplit = () => {
       <div className="relative max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
         {/* ─────────────────────── LEFT: CONTENT ─────────────────────── */}
         <div className="flex flex-col items-start">
-          <div className="hero-animate hero-animate-1 inline-flex items-center gap-2 py-1.5 px-3 rounded-md bg-muted border border-border mb-8">
+          <div className="hero-animate hero-animate-1 inline-flex items-center gap-2 py-1.5 px-3 rounded-xl bg-muted border border-border mb-8">
             <span className="flex h-2 w-2 rounded-full bg-primary" />
             <span className="text-[11px] sm:text-xs font-semibold tracking-wider uppercase text-muted-foreground">
               Software &amp; Web aus Filderstadt · seit 2006
@@ -31,14 +31,14 @@ const HeroSplit = () => {
           <div className="hero-animate hero-animate-3 flex flex-wrap gap-4">
             <Link
               to="/kontakt"
-              className="group inline-flex items-center gap-2 px-7 py-4 bg-primary text-primary-foreground font-semibold rounded-md shadow-sm hover:bg-primary/90 transition-all"
+              className="group inline-flex items-center gap-2 px-7 py-4 bg-primary text-primary-foreground font-semibold rounded-xl shadow-sm hover:bg-primary/90 transition-all"
             >
               Projekt starten
               <ArrowRight size={17} className="transition-transform group-hover:translate-x-1" />
             </Link>
             <Link
               to="/leistungen"
-              className="inline-flex items-center px-7 py-4 bg-background text-foreground border border-border font-semibold rounded-md shadow-sm hover:bg-muted transition-all"
+              className="inline-flex items-center px-7 py-4 bg-background text-foreground border border-border font-semibold rounded-xl shadow-sm hover:bg-muted transition-all"
             >
               Referenzen ansehen
             </Link>
@@ -66,38 +66,38 @@ const HeroSplit = () => {
 
         {/* ─────────────────────── RIGHT: UI MOCKUP ─────────────────────── */}
         <div className="hero-animate hero-animate-3 relative">
-          <div className="relative bg-background border border-border rounded-md shadow-sm overflow-hidden">
+          <div className="relative bg-background border border-border rounded-xl shadow-sm overflow-hidden">
             <div className="flex items-center gap-2 px-4 py-3 border-b border-border bg-muted/40">
               <div className="flex gap-1.5">
                 <div className="w-2.5 h-2.5 rounded-full bg-border" />
                 <div className="w-2.5 h-2.5 rounded-full bg-border" />
                 <div className="w-2.5 h-2.5 rounded-full bg-border" />
               </div>
-              <div className="ml-3 px-3 py-1 bg-background border border-border rounded-md text-[10px] text-muted-foreground/70 w-full max-w-xs truncate font-mono">
+              <div className="ml-3 px-3 py-1 bg-background border border-border rounded-xl text-[10px] text-muted-foreground/70 w-full max-w-xs truncate font-mono">
                 app.for-tel.solutions/dashboard
               </div>
             </div>
 
             <div className="p-6 bg-background min-h-[420px]">
               <div className="grid grid-cols-3 gap-4 mb-6">
-                <div className="bg-muted/40 rounded-md border border-border p-4">
+                <div className="bg-muted/40 rounded-xl border border-border p-4">
                   <div className="h-1.5 w-10 bg-primary/30 rounded-full mb-3" />
                   <div className="text-lg font-bold text-foreground tabular-nums">12.847</div>
                   <div className="h-1.5 w-16 bg-border rounded-full mt-2" />
                 </div>
-                <div className="bg-muted/40 rounded-md border border-border p-4">
+                <div className="bg-muted/40 rounded-xl border border-border p-4">
                   <div className="h-1.5 w-10 bg-border rounded-full mb-3" />
                   <div className="text-lg font-bold text-foreground tabular-nums">98,4%</div>
                   <div className="h-1.5 w-12 bg-border rounded-full mt-2" />
                 </div>
-                <div className="bg-muted/40 rounded-md border border-border p-4">
+                <div className="bg-muted/40 rounded-xl border border-border p-4">
                   <div className="h-1.5 w-10 bg-border rounded-full mb-3" />
                   <div className="text-lg font-bold text-foreground tabular-nums">€ 42k</div>
                   <div className="h-1.5 w-20 bg-border rounded-full mt-2" />
                 </div>
               </div>
 
-              <div className="h-44 bg-muted/30 rounded-md border border-border relative overflow-hidden p-4">
+              <div className="h-44 bg-muted/30 rounded-xl border border-border relative overflow-hidden p-4">
                 <div className="absolute top-3 left-4 flex items-center gap-2">
                   <div className="h-1.5 w-16 bg-border rounded-full" />
                   <div className="h-1.5 w-8 bg-border rounded-full" />
@@ -129,9 +129,9 @@ const HeroSplit = () => {
             </div>
           </div>
 
-          <div className="absolute -bottom-6 -left-4 sm:-left-6 p-4 bg-background border border-border rounded-md shadow-sm">
+          <div className="absolute -bottom-6 -left-4 sm:-left-6 p-4 bg-background border border-border rounded-xl shadow-sm">
             <div className="flex items-center gap-3">
-              <div className="p-2 bg-primary/10 rounded-md">
+              <div className="p-2 bg-primary/10 rounded-xl">
                 <CheckCircle2 size={18} className="text-primary" />
               </div>
               <div>
@@ -143,7 +143,7 @@ const HeroSplit = () => {
             </div>
           </div>
 
-          <div className="absolute -top-4 -right-3 sm:-right-5 px-3 py-2 bg-background border border-border rounded-md shadow-sm hidden sm:flex items-center gap-2">
+          <div className="absolute -top-4 -right-3 sm:-right-5 px-3 py-2 bg-background border border-border rounded-xl shadow-sm hidden sm:flex items-center gap-2">
             <span className="relative flex h-2 w-2">
               <span className="absolute inline-flex h-full w-full rounded-full bg-primary opacity-60 animate-ping" />
               <span className="relative inline-flex rounded-full h-2 w-2 bg-primary" />

@@ -34,29 +34,35 @@ const SplitSection = ({
 }: SplitSectionProps) => (
   <section
     id={id}
-    className={`border-t border-[#E6ECF5] ${bg === 'muted' ? 'bg-[#F7F9FC]' : 'bg-white'}`}
+    className={bg === 'muted' ? 'bg-[#F2F5F9]' : 'bg-[#FAFBFC]'}
   >
-    <div className="mx-auto max-w-7xl px-6 py-20 lg:py-28">
-      <div className="grid items-center gap-12 lg:grid-cols-2 lg:gap-16">
-        <div className={imageSide === 'left' ? 'lg:order-2' : ''}>
+    <div className="mx-auto max-w-6xl px-6 py-16 lg:py-24">
+      <div className="grid items-stretch gap-4 lg:grid-cols-12">
+        <div
+          className={`tile p-8 lg:p-12 lg:col-span-7 flex flex-col justify-center ${
+            imageSide === 'left' ? 'lg:order-2' : ''
+          }`}
+        >
           {(index || eyebrow) && (
-            <p className="text-[11px] font-mono uppercase tracking-widest text-[#5B6B85]">
-              {index && <span className="text-[#2563EB]">{index}</span>}
-              {index && eyebrow && <span className="mx-2">—</span>}
+            <span className="chip w-fit">
+              {index && <span className="text-[#94A3B8]">{index}</span>}
               {eyebrow}
-            </p>
+            </span>
           )}
-          <h2 className="mt-5 text-3xl md:text-4xl font-semibold tracking-tight leading-[1.15] text-[#0B1220]">
+          <h2 className="mt-6 font-display text-[30px] md:text-[40px] font-semibold tracking-[-0.03em] leading-[1.08] text-[#0F1B3D]">
             {title}
           </h2>
           {body && (
-            <div className="mt-5 space-y-4 text-base leading-relaxed text-[#5B6B85]">{body}</div>
+            <div className="mt-5 space-y-4 text-[17px] leading-relaxed text-[#64748B]">{body}</div>
           )}
           {bullets && (
-            <ul className="mt-7 space-y-3">
+            <ul className="mt-8 grid gap-3 sm:grid-cols-2">
               {bullets.map((b) => (
-                <li key={b} className="flex gap-3 text-sm leading-relaxed text-[#0B1220]">
-                  <Check size={16} className="mt-0.5 shrink-0 text-[#2563EB]" />
+                <li
+                  key={b}
+                  className="flex gap-3 rounded-xl bg-[#F2F5F9] px-4 py-3 text-sm leading-relaxed text-[#0F1B3D]"
+                >
+                  <Check size={16} className="mt-0.5 shrink-0 text-[#3B82F6]" />
                   <span>{b}</span>
                 </li>
               ))}
@@ -65,27 +71,29 @@ const SplitSection = ({
           {linkTo && linkLabel && (
             <Link
               to={linkTo}
-              className="mt-8 inline-flex items-center gap-1.5 text-sm font-medium text-[#2563EB] hover:text-[#1E3A8A]"
+              className="mt-8 inline-flex h-11 w-fit items-center gap-2 rounded-full bg-[#0F1B3D] px-6 text-sm font-medium text-white transition-colors hover:bg-[#1D4ED8]"
             >
-              {linkLabel} <ArrowRight size={14} />
+              {linkLabel} <ArrowRight size={15} />
             </Link>
           )}
         </div>
 
-        <div className={imageSide === 'left' ? 'lg:order-1' : ''}>
-          <div className="border border-[#E6ECF5] bg-white p-2">
-            <img
-              src={image}
-              alt={imageAlt}
-              loading="lazy"
-              width={960}
-              height={640}
-              className="aspect-[3/2] w-full select-none object-cover"
-              draggable={false}
-              onContextMenu={(e) => e.preventDefault()}
-              onDragStart={(e) => e.preventDefault()}
-            />
-          </div>
+        <div
+          className={`tile overflow-hidden lg:col-span-5 ${
+            imageSide === 'left' ? 'lg:order-1' : ''
+          }`}
+        >
+          <img
+            src={image}
+            alt={imageAlt}
+            loading="lazy"
+            width={960}
+            height={640}
+            className="h-full min-h-[280px] w-full select-none object-cover"
+            draggable={false}
+            onContextMenu={(e) => e.preventDefault()}
+            onDragStart={(e) => e.preventDefault()}
+          />
         </div>
       </div>
     </div>

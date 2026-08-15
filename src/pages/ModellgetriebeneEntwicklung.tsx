@@ -31,17 +31,17 @@ const ModellgetriebeneEntwicklung = () => (
     />
     <PageHero
       eyebrow="Methode · MDD"
-      title={<>Fachlichkeit modellieren statt <span className="text-[#2563EB]">Code kopieren</span>.</>}
+      title={<>Fachlichkeit modellieren statt <span className="text-[#3B82F6]">Code kopieren</span>.</>}
       intro="Modellgetriebene Entwicklung verlagert die Arbeit dorthin, wo sie hingehört: in die Fachlichkeit. Der repetitive Teil — Schema, Schnittstellen, Validierung, Gerüste — entsteht automatisch."
       breadcrumb={[{ label: 'Start', href: '/' }, { label: 'Modellgetriebene Entwicklung' }]}
     />
 
     <Section index="01" eyebrow="Bausteine" title="Fünf Disziplinen, die MDD im Alltag tragfähig machen.">
-      <div className="grid gap-x-14 gap-y-12 md:grid-cols-2">
+      <div className="grid gap-4 md:grid-cols-2">
         {bausteine.map(([t, d]) => (
-          <div key={t}>
-            <h3 className="text-xl font-semibold text-[#0B1220]">{t}</h3>
-            <p className="mt-3 text-sm leading-relaxed text-[#5B6B85]">{d}</p>
+          <div key={t} className="tile tile-hover p-7">
+            <h3 className="text-xl font-semibold text-[#0F1B3D]">{t}</h3>
+            <p className="mt-3 text-sm leading-relaxed text-[#64748B]">{d}</p>
           </div>
         ))}
       </div>
@@ -74,12 +74,12 @@ const ModellgetriebeneEntwicklung = () => (
     />
 
     <Section index="03" eyebrow="Vorgehen" title="Fünf Phasen bis zum produktiven Durchstich.">
-      <div className="grid gap-6 md:grid-cols-5">
+      <div className="grid gap-4 md:grid-cols-5">
         {phasen.map(([n, t, d]) => (
-          <div key={n} className="border border-[#E6ECF5] bg-white p-6">
-            <p className="font-mono text-xs text-[#2563EB]">{n}</p>
-            <h3 className="mt-4 text-base font-semibold text-[#0B1220]">{t}</h3>
-            <p className="mt-2 text-sm leading-relaxed text-[#5B6B85]">{d}</p>
+          <div key={n} className="tile tile-hover p-6">
+            <p className="font-mono text-xs text-[#3B82F6]">{n}</p>
+            <h3 className="mt-4 text-base font-semibold text-[#0F1B3D]">{t}</h3>
+            <p className="mt-2 text-sm leading-relaxed text-[#64748B]">{d}</p>
           </div>
         ))}
       </div>

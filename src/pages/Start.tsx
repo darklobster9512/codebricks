@@ -60,17 +60,18 @@ const Start = () => (
       eyebrow="Angebot"
       title="Framework, Methode und Begleitung — aus einer Hand."
       intro="Wir entwickeln das Werkzeug, vertreiben die Lizenzen und bringen beides in Ihrem Team zum Laufen. Jeder Bereich ist einzeln buchbar."
-      className="!pt-48 md:!pt-44 lg:!pt-44"
     >
-      <div className="grid gap-14 md:grid-cols-3">
+      <div className="grid gap-4 md:grid-cols-6">
         {services.map((s) => (
-          <div key={s.title} className="flex flex-col">
-            <s.icon size={28} strokeWidth={1.5} className="text-[#2563EB]" />
-            <h3 className="mt-6 text-xl font-semibold tracking-tight text-[#0B1220]">{s.title}</h3>
-            <p className="mt-3 text-sm leading-relaxed text-[#5B6B85]">{s.body}</p>
+          <div key={s.title} className="tile tile-hover md:col-span-2 flex flex-col p-7">
+            <div className="flex h-11 w-11 items-center justify-center rounded-xl bg-[#EFF6FF]">
+              <s.icon size={22} strokeWidth={1.6} className="text-[#3B82F6]" />
+            </div>
+            <h3 className="mt-6 font-display text-xl font-semibold tracking-[-0.02em] text-[#0F1B3D]">{s.title}</h3>
+            <p className="mt-3 text-sm leading-relaxed text-[#64748B]">{s.body}</p>
             <Link
               to={s.to}
-              className="mt-6 inline-flex items-center gap-1 text-sm font-medium text-[#2563EB] hover:text-[#1E3A8A]"
+              className="mt-6 inline-flex items-center gap-1 text-sm font-medium text-[#3B82F6] hover:text-[#1D4ED8]"
             >
               Mehr erfahren <ArrowRight size={14} />
             </Link>
@@ -132,12 +133,12 @@ const Start = () => (
 
     {/* PRINCIPLES */}
     <Section index="04" eyebrow="Haltung" title="Vier Grundsätze, an denen Sie uns messen können." bg="muted">
-      <div className="divide-y divide-[#E6ECF5] border-y border-[#E6ECF5]">
+      <div className="grid gap-4 md:grid-cols-4">
         {principles.map(([n, t, d]) => (
-          <div key={n} className="grid gap-6 md:grid-cols-12 py-8">
-            <div className="md:col-span-2 font-mono text-sm text-[#2563EB]">{n}</div>
-            <div className="md:col-span-4 text-lg font-medium text-[#0B1220]">{t}</div>
-            <div className="md:col-span-6 text-sm leading-relaxed text-[#5B6B85]">{d}</div>
+          <div key={n} className="tile tile-hover p-7">
+            <span className="font-display text-sm font-semibold text-[#94A3B8]">{n}</span>
+            <p className="mt-4 font-display text-lg font-semibold tracking-[-0.02em] text-[#0F1B3D]">{t}</p>
+            <p className="mt-3 text-sm leading-relaxed text-[#64748B]">{d}</p>
           </div>
         ))}
       </div>
@@ -145,9 +146,12 @@ const Start = () => (
 
     {/* TECH WALL */}
     <Section index="05" eyebrow="Zielplattformen" title="Generiert wird in die Technologien, die Sie bereits betreiben.">
-      <div className="flex flex-wrap gap-x-10 gap-y-6">
+      <div className="flex flex-wrap gap-3">
         {techs.map((t) => (
-          <span key={t} className="text-lg font-medium tracking-tight text-[#5B6B85] transition-colors hover:text-[#0B1220]">
+          <span
+            key={t}
+            className="rounded-full border border-[#E8ECF1] bg-white px-5 py-2.5 font-display text-sm font-medium text-[#0F1B3D] shadow-[0_1px_2px_rgba(15,27,61,0.04)] transition-colors hover:border-[#3B82F6] hover:text-[#3B82F6]"
+          >
             {t}
           </span>
         ))}
@@ -176,13 +180,15 @@ const Start = () => (
 
     {/* CASES */}
     <Section index="07" eyebrow="Einsatzbeispiele" title="Wo Modelle bereits produktiv Code erzeugen.">
-      <div className="divide-y divide-[#E6ECF5] border-y border-[#E6ECF5]">
+      <div className="grid gap-4 md:grid-cols-3">
         {cases.map(([branche, projekt, ergebnis]) => (
-          <div key={projekt} className="grid items-center gap-6 py-8 md:grid-cols-12">
-            <div className="md:col-span-3 text-[11px] font-mono uppercase tracking-widest text-[#5B6B85]">{branche}</div>
-            <div className="md:col-span-6 text-lg text-[#0B1220]">{projekt}</div>
-            <div className="md:col-span-2 font-mono text-sm text-[#2563EB]">{ergebnis}</div>
-            <div className="md:col-span-1 md:text-right"><ChevronRight size={18} className="inline text-[#5B6B85]" /></div>
+          <div key={projekt} className="tile tile-hover flex flex-col p-7">
+            <span className="chip w-fit">{branche}</span>
+            <p className="mt-5 flex-1 text-[17px] leading-snug text-[#0F1B3D]">{projekt}</p>
+            <div className="mt-6 flex items-center justify-between border-t border-[#E8ECF1] pt-4">
+              <span className="font-display text-sm font-semibold text-[#3B82F6]">{ergebnis}</span>
+              <ChevronRight size={18} className="text-[#94A3B8]" />
+            </div>
           </div>
         ))}
       </div>
@@ -190,20 +196,20 @@ const Start = () => (
 
     {/* TESTIMONIAL */}
     <Section index="08" eyebrow="Stimmen" bg="muted">
-      <div className="grid items-start gap-10 md:grid-cols-12">
+      <div className="tile grid items-start gap-10 p-8 md:grid-cols-12 lg:p-12">
         <div className="md:col-span-2">
-          <div className="flex h-20 w-20 items-center justify-center rounded-full bg-[#EFF4FF] font-mono text-2xl text-[#2563EB]">
+          <div className="flex h-20 w-20 items-center justify-center rounded-2xl bg-[#EFF6FF] font-display text-2xl font-semibold text-[#3B82F6]">
             MK
           </div>
         </div>
         <div className="md:col-span-10">
-          <Quote size={28} className="text-[#2563EB]" strokeWidth={1.5} />
-          <blockquote className="mt-4 text-2xl font-medium leading-snug tracking-tight text-[#0B1220] md:text-3xl">
+          <Quote size={28} className="text-[#3B82F6]" strokeWidth={1.5} />
+          <blockquote className="mt-4 font-display text-2xl font-medium leading-snug tracking-[-0.02em] text-[#0F1B3D] md:text-3xl">
             „Nach dem Umstieg auf Codebricks entstehen neue Antragsvarianten in Tagen statt in
             Wochen — und zum ersten Mal stimmt die Fachdoku mit dem laufenden System überein."
           </blockquote>
-          <p className="mt-6 text-sm text-[#5B6B85]">
-            <span className="font-medium text-[#0B1220]">Dr. Martin Köhler</span> · Leiter Anwendungsentwicklung, Finanzdienstleister
+          <p className="mt-6 text-sm text-[#64748B]">
+            <span className="font-medium text-[#0F1B3D]">Dr. Martin Köhler</span> · Leiter Anwendungsentwicklung, Finanzdienstleister
           </p>
         </div>
       </div>

@@ -2,66 +2,78 @@ import { Link } from 'react-router-dom';
 import logo from '@/assets/logo-codebricks.png';
 
 const Footer = () => (
-  <footer className="border-t border-[#E6ECF5] bg-white">
-    <div className="mx-auto max-w-7xl px-6 py-16">
-      <div className="grid gap-12 md:grid-cols-12">
-        <div className="md:col-span-4">
-          <img
-            src={logo}
-            alt="Codebricks GmbH"
-            className="h-9 w-auto select-none"
-            draggable={false}
-            onContextMenu={(e) => e.preventDefault()}
-          />
-          <p className="mt-5 max-w-xs text-sm leading-relaxed text-[#5B6B85]">
-            Frameworks und Werkzeuge für die modellgetriebene Softwareentwicklung —
-            entwickelt, lizenziert und begleitet aus Berlin.
-          </p>
-        </div>
+  <footer className="bg-[#FAFBFC] px-4 pb-4">
+    <div className="mx-auto max-w-6xl overflow-hidden rounded-[2rem] bg-[#0F1B3D] text-white">
+      <div className="px-8 py-14 lg:px-14">
+        <p className="max-w-3xl font-display text-[30px] md:text-[42px] font-semibold leading-[1.08] tracking-[-0.03em]">
+          Modelle statt Copy-Paste — <span className="text-[#7DB0FB]">Software, die mitwächst.</span>
+        </p>
+        <Link
+          to="/kontakt"
+          className="mt-8 inline-flex h-12 items-center rounded-full bg-white px-6 text-sm font-medium text-[#0F1B3D] transition-colors hover:bg-[#3B82F6] hover:text-white"
+        >
+          Gespräch vereinbaren
+        </Link>
 
-        <div className="md:col-span-2">
-          <p className="text-[11px] font-mono uppercase tracking-widest text-[#5B6B85]">Produkt</p>
-          <ul className="mt-4 space-y-3 text-sm text-[#0B1220]">
-            <li><Link to="/plattform" className="hover:text-[#2563EB]">Plattform</Link></li>
-            <li><Link to="/modellgetriebene-entwicklung" className="hover:text-[#2563EB]">Modellgetriebene Entwicklung</Link></li>
-            <li><Link to="/services" className="hover:text-[#2563EB]">Services &amp; Lizenzen</Link></li>
-          </ul>
-        </div>
+        <div className="mt-14 grid gap-10 border-t border-white/10 pt-10 md:grid-cols-12">
+          <div className="md:col-span-4">
+            <img
+              src={logo}
+              alt="Codebricks GmbH"
+              className="h-8 w-auto select-none brightness-0 invert"
+              draggable={false}
+              onContextMenu={(e) => e.preventDefault()}
+            />
+            <p className="mt-5 max-w-xs text-sm leading-relaxed text-[#94A3B8]">
+              Frameworks und Werkzeuge für die modellgetriebene Softwareentwicklung —
+              entwickelt, lizenziert und begleitet aus Berlin.
+            </p>
+          </div>
 
-        <div className="md:col-span-2">
-          <p className="text-[11px] font-mono uppercase tracking-widest text-[#5B6B85]">Unternehmen</p>
-          <ul className="mt-4 space-y-3 text-sm text-[#0B1220]">
-            <li><Link to="/team" className="hover:text-[#2563EB]">Team</Link></li>
-            <li><Link to="/karriere" className="hover:text-[#2563EB]">Karriere</Link></li>
-            <li><Link to="/kontakt" className="hover:text-[#2563EB]">Kontakt</Link></li>
-            <li><Link to="/impressum" className="hover:text-[#2563EB]">Impressum</Link></li>
-            <li><Link to="/datenschutz" className="hover:text-[#2563EB]">Datenschutz</Link></li>
-          </ul>
-        </div>
+          <div className="md:col-span-2">
+            <p className="text-[11px] font-display font-semibold uppercase tracking-[0.14em] text-[#7DB0FB]">Produkt</p>
+            <ul className="mt-4 space-y-3 text-sm text-white/85">
+              <li><Link to="/plattform" className="hover:text-white">Plattform</Link></li>
+              <li><Link to="/modellgetriebene-entwicklung" className="hover:text-white">Modellgetriebene Entwicklung</Link></li>
+              <li><Link to="/services" className="hover:text-white">Services &amp; Lizenzen</Link></li>
+            </ul>
+          </div>
 
-        <div className="md:col-span-4">
-          <p className="text-[11px] font-mono uppercase tracking-widest text-[#5B6B85]">Kontakt</p>
-          <address className="mt-4 not-italic text-sm leading-relaxed text-[#0B1220]">
-            Codebricks GmbH<br />
-            Leipziger Platz 15<br />
-            10117 Berlin
-          </address>
-          <div className="mt-4 space-y-1 text-sm">
-            <a href="mailto:kontakt@codebricks-gmbh.de" className="block text-[#0B1220] hover:text-[#2563EB]">
-              kontakt@codebricks-gmbh.de
-            </a>
-            <a href="tel:+4930123456789" className="block text-[#0B1220] hover:text-[#2563EB]">
-              030 123456789
-            </a>
+          <div className="md:col-span-2">
+            <p className="text-[11px] font-display font-semibold uppercase tracking-[0.14em] text-[#7DB0FB]">Unternehmen</p>
+            <ul className="mt-4 space-y-3 text-sm text-white/85">
+              <li><Link to="/team" className="hover:text-white">Team</Link></li>
+              <li><Link to="/karriere" className="hover:text-white">Karriere</Link></li>
+              <li><Link to="/kontakt" className="hover:text-white">Kontakt</Link></li>
+              <li><Link to="/impressum" className="hover:text-white">Impressum</Link></li>
+              <li><Link to="/datenschutz" className="hover:text-white">Datenschutz</Link></li>
+            </ul>
+          </div>
+
+          <div className="md:col-span-4">
+            <p className="text-[11px] font-display font-semibold uppercase tracking-[0.14em] text-[#7DB0FB]">Kontakt</p>
+            <address className="mt-4 not-italic text-sm leading-relaxed text-white/85">
+              Codebricks GmbH<br />
+              Leipziger Platz 15<br />
+              10117 Berlin
+            </address>
+            <div className="mt-4 space-y-1 text-sm">
+              <a href="mailto:kontakt@codebricks-gmbh.de" className="block text-white/85 hover:text-white">
+                kontakt@codebricks-gmbh.de
+              </a>
+              <a href="tel:+4930123456789" className="block text-white/85 hover:text-white">
+                030 123456789
+              </a>
+            </div>
           </div>
         </div>
-      </div>
 
-      <div className="mt-14 flex flex-col md:flex-row md:items-center md:justify-between gap-4 border-t border-[#E6ECF5] pt-6 text-xs text-[#5B6B85]">
-        <p>© {new Date().getFullYear()} Codebricks GmbH · HRB 258971 B · USt-ID DE458097140</p>
-        <div className="flex gap-6">
-          <Link to="/impressum" className="hover:text-[#0B1220]">Impressum</Link>
-          <Link to="/datenschutz" className="hover:text-[#0B1220]">Datenschutz</Link>
+        <div className="mt-12 flex flex-col gap-4 border-t border-white/10 pt-6 text-xs text-[#94A3B8] md:flex-row md:items-center md:justify-between">
+          <p>© {new Date().getFullYear()} Codebricks GmbH · HRB 258971 B · USt-ID DE458097140</p>
+          <div className="flex gap-6">
+            <Link to="/impressum" className="hover:text-white">Impressum</Link>
+            <Link to="/datenschutz" className="hover:text-white">Datenschutz</Link>
+          </div>
         </div>
       </div>
     </div>

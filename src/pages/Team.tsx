@@ -152,18 +152,18 @@ const bereiche: Bereich[] = [
 ];
 
 const PeopleRows = ({ people }: { people: Person[] }) => (
-  <div className="divide-y divide-[#E6ECF5] border-y border-[#E6ECF5]">
+  <div className="divide-y divide-[#E8ECF1] rounded-[1.25rem] border border-[#E8ECF1] bg-white px-6">
     {people.map((p) => (
       <div key={p.name} className="grid gap-6 md:grid-cols-12 py-10">
         <div className="md:col-span-4">
-          <h3 className="text-xl font-semibold tracking-tight text-[#0B1220]">{p.name}</h3>
-          <p className="mt-2 text-sm text-[#2563EB]">{p.role}</p>
+          <h3 className="text-xl font-semibold tracking-tight text-[#0F1B3D]">{p.name}</h3>
+          <p className="mt-2 text-sm text-[#3B82F6]">{p.role}</p>
         </div>
         <div className="md:col-span-3">
-          <p className="text-[11px] font-mono uppercase tracking-widest text-[#5B6B85]">{p.focus}</p>
+          <p className="text-[11px] font-mono uppercase tracking-widest text-[#64748B]">{p.focus}</p>
         </div>
         <div className="md:col-span-5">
-          <p className="text-sm leading-relaxed text-[#5B6B85]">{p.text}</p>
+          <p className="text-sm leading-relaxed text-[#64748B]">{p.text}</p>
         </div>
       </div>
     ))}
@@ -179,7 +179,7 @@ const Team = () => (
     />
     <PageHero
       eyebrow="Unternehmen · Team"
-      title={<>Die Menschen hinter <span className="text-[#2563EB]">Codebricks</span>.</>}
+      title={<>Die Menschen hinter <span className="text-[#3B82F6]">Codebricks</span>.</>}
       intro="Wir entwickeln in Berlin Frameworks und Werkzeuge für die modellgetriebene Softwareentwicklung. Sechs Bereiche, klare Zuständigkeiten — und immer ein Name statt einer Ticketnummer."
       breadcrumb={[{ label: 'Start', href: '/' }, { label: 'Team' }]}
     />

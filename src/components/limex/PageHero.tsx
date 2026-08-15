@@ -11,33 +11,35 @@ interface PageHeroProps {
 }
 
 const PageHero = ({ eyebrow, title, intro, breadcrumb }: PageHeroProps) => (
-  <section className="bg-white">
-    <div className="mx-auto max-w-7xl px-6 pt-16 pb-20 lg:pt-24 lg:pb-28">
+  <section className="relative overflow-hidden bg-[#FAFBFC]">
+    <div
+      aria-hidden
+      className="pointer-events-none absolute -top-40 right-[-10%] h-[420px] w-[420px] rounded-full bg-[#3B82F6]/10 blur-3xl"
+    />
+    <div className="relative mx-auto max-w-6xl px-6 pt-14 pb-16 lg:pt-20 lg:pb-20">
       {breadcrumb && (
-        <nav className="mb-8 text-[12px] text-[#5B6B85]">
+        <nav className="mb-8 text-[12px] text-[#64748B]">
           {breadcrumb.map((c, i) => (
             <span key={i}>
               {c.href ? (
-                <Link to={c.href} className="hover:text-[#0B1220]">{c.label}</Link>
+                <Link to={c.href} className="hover:text-[#0F1B3D]">{c.label}</Link>
               ) : (
-                <span className="text-[#0B1220]">{c.label}</span>
+                <span className="text-[#0F1B3D]">{c.label}</span>
               )}
-              {i < breadcrumb.length - 1 && <span className="mx-2 text-[#E6ECF5]">/</span>}
+              {i < breadcrumb.length - 1 && <span className="mx-2 text-[#E8ECF1]">/</span>}
             </span>
           ))}
         </nav>
       )}
-      {eyebrow && (
-        <p className="text-[11px] font-mono uppercase tracking-widest text-[#2563EB] mb-5">
-          {eyebrow}
-        </p>
-      )}
-      <h1 className="max-w-4xl text-4xl md:text-5xl lg:text-6xl font-semibold tracking-tight leading-[1.05] text-[#0B1220]">
-        {title}
-      </h1>
-      {intro && (
-        <p className="mt-8 max-w-2xl text-lg leading-relaxed text-[#5B6B85]">{intro}</p>
-      )}
+      <div className="tile p-8 lg:p-14">
+        {eyebrow && <span className="chip">{eyebrow}</span>}
+        <h1 className="mt-6 max-w-3xl font-display text-[38px] md:text-[54px] lg:text-[62px] font-semibold tracking-[-0.035em] leading-[1.02] text-[#0F1B3D]">
+          {title}
+        </h1>
+        {intro && (
+          <p className="mt-7 max-w-2xl text-[17px] leading-relaxed text-[#64748B]">{intro}</p>
+        )}
+      </div>
     </div>
   </section>
 );

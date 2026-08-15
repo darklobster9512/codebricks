@@ -27,7 +27,7 @@ const CertificationsBar = () => {
               key={it.label}
               className={`flex flex-col gap-3 p-5 rounded-lg border border-border bg-background hover:border-primary/40 transition-colors scroll-hidden delay-${(i % 6) + 1} ${isVisible ? 'scroll-visible' : ''}`}
             >
-              <div className="w-10 h-10 rounded-md bg-primary/10 flex items-center justify-center">
+              <div className="w-10 h-10 rounded-xl bg-primary/10 flex items-center justify-center">
                 <it.icon size={18} className="text-primary" />
               </div>
               <div>

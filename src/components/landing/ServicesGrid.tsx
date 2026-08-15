@@ -109,7 +109,7 @@ const DigitalisierungVisual = () => (
       </div>
     </div>
     <div className="p-3 rounded-xl bg-white border border-border/40 flex items-center gap-2">
-      <div className="w-6 h-6 rounded-md bg-primary/10 flex items-center justify-center text-[10px] text-primary">☁</div>
+      <div className="w-6 h-6 rounded-xl bg-primary/10 flex items-center justify-center text-[10px] text-primary">☁</div>
       <span className="text-[10px] font-medium text-muted-foreground">Cloud-Infrastruktur aktiv</span>
       <span className="ml-auto text-[10px] font-bold text-[hsl(142_71%_35%)]">Live</span>
     </div>

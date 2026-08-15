@@ -33,14 +33,14 @@ const HeroBento = () => {
             <div className="flex flex-wrap gap-3 sm:gap-4">
               <Link
                 to="/kontakt"
-                className="group/btn inline-flex items-center gap-2 px-7 py-4 bg-primary text-primary-foreground font-semibold rounded-md transition-all shadow-sm hover:bg-primary/90 hover:-translate-y-0.5"
+                className="group/btn inline-flex items-center gap-2 px-7 py-4 bg-primary text-primary-foreground font-semibold rounded-xl transition-all shadow-sm hover:bg-primary/90 hover:-translate-y-0.5"
               >
                 Projekt anfragen
                 <ArrowRight size={17} className="transition-transform group-hover/btn:translate-x-1" />
               </Link>
               <Link
                 to="/leistungen"
-                className="inline-flex items-center px-7 py-4 bg-background text-foreground border border-border font-semibold rounded-md hover:border-primary/40 hover:bg-muted transition-all"
+                className="inline-flex items-center px-7 py-4 bg-background text-foreground border border-border font-semibold rounded-xl hover:border-primary/40 hover:bg-muted transition-all"
               >
                 Unsere Leistungen
               </Link>
@@ -98,7 +98,7 @@ const HeroBento = () => {
               ].map(({ Icon, label, sub }) => (
                 <div
                   key={label}
-                  className="p-3.5 rounded-md bg-muted/50 border border-border transition-all duration-300 hover:bg-background hover:shadow-sm hover:border-primary/20"
+                  className="p-3.5 rounded-xl bg-muted/50 border border-border transition-all duration-300 hover:bg-background hover:shadow-sm hover:border-primary/20"
                 >
                   <div className="w-8 h-8 rounded-lg bg-primary/10 flex items-center justify-center mb-3">
                     <Icon size={15} className="text-primary" />
@@ -129,7 +129,7 @@ const HeroBento = () => {
           {/* Two smaller info tiles */}
           <div className="grid grid-cols-2 gap-5 lg:gap-6">
             <div className="hero-animate hero-animate-3 bg-background rounded-lg p-6 sm:p-8 border border-border shadow-sm hover:shadow transition-shadow group flex flex-col">
-              <div className="w-12 h-12 rounded-md bg-primary/10 flex items-center justify-center mb-6 group-hover:bg-primary transition-colors">
+              <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center mb-6 group-hover:bg-primary transition-colors">
                 <Building2 size={22} className="text-primary group-hover:text-primary-foreground transition-colors" />
               </div>
               <div className="font-display font-bold text-foreground">Branchen</div>
