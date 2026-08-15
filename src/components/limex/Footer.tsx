@@ -20,7 +20,7 @@ const Footer = () => (
             <img
               src={logo}
               alt="Codebricks GmbH"
-              className="h-8 w-auto select-none brightness-0 invert"
+              className="h-11 w-auto select-none brightness-0 invert"
               draggable={false}
               onContextMenu={(e) => e.preventDefault()}
             />
