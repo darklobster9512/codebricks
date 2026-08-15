@@ -87,9 +87,9 @@ const Bewerbung = () => {
       />
 
       <section className="bg-[#FAFBFC]">
-        <div className="mx-auto max-w-3xl px-6 pb-16 lg:pb-24">
-          <form onSubmit={handleSubmit} className="tile mx-auto max-w-3xl space-y-8 p-8 lg:p-12">
-            <div className="grid gap-6 md:grid-cols-2">
+        <div className="mx-auto max-w-3xl px-5 pb-12 sm:px-6 sm:pb-16 lg:pb-24">
+          <form onSubmit={handleSubmit} className="tile mx-auto max-w-3xl space-y-6 p-6 sm:space-y-8 sm:p-8 lg:p-12">
+            <div className="grid gap-5 sm:gap-6 md:grid-cols-2">
               <div className="space-y-2">
                 <Label htmlFor="vorname">Vorname *</Label>
                 <Input id="vorname" name="vorname" value={form.vorname} onChange={handleChange} required />
@@ -137,7 +137,7 @@ const Bewerbung = () => {
             <button
               type="submit"
               disabled={submitting}
-              className="inline-flex h-11 items-center gap-2 rounded-xl bg-[#3B82F6] px-6 text-sm font-medium text-white hover:bg-[#1D4ED8] disabled:opacity-50"
+              className="inline-flex h-12 w-full items-center justify-center gap-2 rounded-full bg-[#3B82F6] px-6 text-sm font-medium text-white hover:bg-[#1D4ED8] disabled:opacity-50 sm:h-11 sm:w-auto"
             >
               {submitting ? <><Loader2 size={16} className="animate-spin" /> Wird gesendet…</> : <>Bewerbung senden <Send size={16} /></>}
             </button>

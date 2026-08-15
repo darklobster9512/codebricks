@@ -41,10 +41,10 @@ const Kontakt = () => {
       />
 
       <section className="bg-[#FAFBFC]">
-        <div className="mx-auto max-w-6xl px-6 pb-16 lg:pb-24">
-          <div className="grid gap-4 lg:grid-cols-12">
-            <form onSubmit={submit} className="tile lg:col-span-7 space-y-6 p-8 lg:p-10">
-              <div className="grid gap-6 md:grid-cols-2">
+        <div className="mx-auto max-w-6xl px-5 pb-12 sm:px-6 sm:pb-16 lg:pb-24">
+          <div className="grid gap-3 sm:gap-4 lg:grid-cols-12">
+            <form onSubmit={submit} className="tile lg:col-span-7 space-y-5 p-6 sm:space-y-6 sm:p-8 lg:p-10">
+              <div className="grid gap-5 sm:gap-6 md:grid-cols-2">
                 <div className="space-y-2">
                   <Label htmlFor="name">Name *</Label>
                   <Input id="name" value={form.name} onChange={(e) => setForm({ ...form, name: e.target.value })} required />
@@ -68,23 +68,23 @@ const Kontakt = () => {
               </div>
               <div className="space-y-2">
                 <Label htmlFor="nachricht">Nachricht *</Label>
-                <Textarea id="nachricht" rows={6} value={form.nachricht} onChange={(e) => setForm({ ...form, nachricht: e.target.value })} required />
+                <Textarea id="nachricht" rows={6} className="text-base md:text-sm" value={form.nachricht} onChange={(e) => setForm({ ...form, nachricht: e.target.value })} required />
               </div>
-              <label className="flex gap-3 text-xs text-[#64748B]">
-                <input type="checkbox" checked={form.dsgvo} onChange={(e) => setForm({ ...form, dsgvo: e.target.checked })} className="mt-0.5" />
+              <label className="flex gap-3 text-xs leading-relaxed text-[#64748B]">
+                <input type="checkbox" checked={form.dsgvo} onChange={(e) => setForm({ ...form, dsgvo: e.target.checked })} className="mt-0.5 h-4 w-4 shrink-0" />
                 <span>Ich habe die <a href="/datenschutz" className="text-[#3B82F6] hover:underline">Datenschutzerklärung</a> gelesen und stimme der Verarbeitung meiner Daten zur Beantwortung meiner Anfrage zu.</span>
               </label>
               <button
                 type="submit"
                 disabled={submitting}
-                className="inline-flex h-11 items-center gap-2 rounded-full bg-[#0F1B3D] px-6 text-sm font-medium text-white hover:bg-[#3B82F6] disabled:opacity-50"
+                className="inline-flex h-12 w-full items-center justify-center gap-2 rounded-full bg-[#0F1B3D] px-6 text-sm font-medium text-white hover:bg-[#3B82F6] disabled:opacity-50 sm:h-11 sm:w-auto"
               >
                 {submitting ? <><Loader2 size={16} className="animate-spin" /> Wird gesendet…</> : <>Nachricht senden <Send size={16} /></>}
               </button>
             </form>
 
             <aside className="lg:col-span-5">
-              <div className="tile lg:sticky lg:top-28 p-8 space-y-6">
+              <div className="tile lg:sticky lg:top-28 p-6 space-y-6 sm:p-8">
                 <p className="text-[11px] font-mono uppercase tracking-widest text-[#3B82F6]">Direktkontakt</p>
                 <div className="space-y-5 text-sm">
                   <div className="flex gap-3">
