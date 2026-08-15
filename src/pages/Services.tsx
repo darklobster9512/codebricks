@@ -107,7 +107,7 @@ const Services = () => (
         'Optionale Sprechstunde alle zwei Wochen',
       ]}
       image={support}
-      imageAlt="Support-Team im Gespräch mit Kundinnen und Kunden"
+      imageAlt="Support-Mitarbeiter mit Headset betreut Kundenanfragen"
       imageSide="left"
     />
 

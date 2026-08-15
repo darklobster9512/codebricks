@@ -69,7 +69,7 @@ const ModellgetriebeneEntwicklung = () => (
         'Änderungen sind reviewbar wie Code — inklusive Diff',
       ]}
       image={workshop}
-      imageAlt="Team in einem Modellierungsworkshop mit Notizzetteln und Laptops"
+      imageAlt="Modellierungsworkshop: Domänenmodell entsteht am Whiteboard"
       bg="muted"
     />
 
