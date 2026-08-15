@@ -1,42 +1,49 @@
 import PageHero from '@/components/limex/PageHero';
 import Section from '@/components/limex/Section';
+import SplitSection from '@/components/limex/SplitSection';
 import CTABand from '@/components/limex/CTABand';
 import SEO from '@/components/limex/SEO';
-import architecture from '@/assets/limex-architecture.jpg';
+import training from '@/assets/photos/training-presentation.jpg';
+import support from '@/assets/photos/workshop-group.jpg';
 
-const domains = [
-  ['ERP', 'SAP S/4HANA, Microsoft Dynamics 365, Sage — Stammdaten, Belege, Finanzflüsse.'],
-  ['CRM', 'Salesforce, HubSpot, Microsoft Dynamics CRM — Leads, Opportunities, Service-Prozesse.'],
-  ['E-Commerce', 'Shopware, Shopify, SAP Commerce — Katalog, Preise, Bestellungen, Retouren.'],
-  ['Datenplattformen', 'Snowflake, BigQuery, Databricks — Ingestion, Modellierung, Governance.'],
-  ['Middleware & iPaaS', 'MuleSoft, workato, Azure Integration Services, Kafka — als Rückgrat oder als Klebstoff.'],
-  ['Identity & Access', 'Okta, Entra ID, Keycloak — SSO, SCIM, Rollen- und Rechtekonzepte.'],
+const leistungen = [
+  ['Einführung', 'Installation, Anbindung an Ihre Build-Pipeline und der erste produktive Generatorlauf — begleitet in zwei bis vier Wochen.'],
+  ['Generator-Anpassung', 'Templates werden auf Ihre Architektur, Frameworks und Namenskonventionen zugeschnitten.'],
+  ['Schulung & Zertifizierung', 'Dreitägige Grundlagenschulung für Entwicklungsteams, Aufbaukurs für Generator- und DSL-Bau.'],
+  ['Migration', 'Überführung bestehender Fachlogik in Modelle — Domäne für Domäne, ohne Betriebsunterbrechung.'],
+  ['Wartung & Support', 'Versionspflege, Sicherheitsupdates und ein benannter Ansprechpartner mit vereinbarten Reaktionszeiten.'],
+  ['Managed Modelling', 'Auf Wunsch pflegen wir Modelle und Generatoren dauerhaft für Sie — als verlängerte Werkbank Ihres Teams.'],
 ];
 
-const patterns = [
-  ['REST & GraphQL', 'Für synchrone Anfragen, Portale und Frontends. Versioniert, dokumentiert, überwacht.'],
-  ['Event-Streaming', 'Kafka, EventBridge, Azure Event Grid — für lose gekoppelte, skalierbare Fachdomänen.'],
-  ['ETL / ELT', 'Airflow, Fivetran, dbt — für Batch-Verarbeitung großer Datenmengen und Reporting-Strecken.'],
-  ['File-basiert & EDI', 'Wenn der Partner nur SFTP oder EDIFACT spricht — mit sauberer Fehlerbehandlung und Wiederanlauf.'],
+const lizenzen = [
+  ['Evaluierung', 'Vollständiger Funktionsumfang für 60 Tage, inklusive Einführungstermin.', 'Kostenfrei'],
+  ['Team', 'Named-User-Lizenz pro Entwicklerplatz, jährlich abgerechnet, inklusive Updates.', 'Ab 5 Arbeitsplätzen'],
+  ['Enterprise', 'Unternehmensweite Lizenz mit Quellcode-Zugang zu den Templates und priorisiertem Support.', 'Individuelles Angebot'],
 ];
 
-const Systemintegration = () => (
+const sla = [
+  ['Reaktionszeit', '4 Stunden', 'für betriebsverhindernde Störungen, werktags 08–18 Uhr'],
+  ['Release-Zyklus', '6 Wochen', 'planbare Minor-Releases, LTS-Linie über 24 Monate'],
+  ['Update-Support', '24 Monate', 'Rückwärtskompatibilität für Modelle und Templates'],
+];
+
+const Services = () => (
   <>
     <SEO
-      title="Systemintegration | LIMEX Solutions"
-      description="Bestehende Systeme sauber verbinden: ERP, CRM, Legacy, Cloud — zuverlässige Schnittstellen, saubere Datenflüsse und stabile Prozesse."
-      path="/systemintegration"
+      title="Services & Lizenzen | Codebricks GmbH"
+      description="Einführung, Generator-Anpassung, Schulung, Migration und Support rund um das Codebricks-Framework — inklusive Lizenzmodelle und SLA."
+      path="/services"
     />
     <PageHero
-      eyebrow="Leistung · Systemintegration"
-      title={<>Systeme, die <span className="text-[#2563EB]">miteinander sprechen</span>.</>}
-      intro="Zwischen ERP, CRM, Shop und Warenwirtschaft entsteht der eigentliche Wert. Wir integrieren Ihre Systemlandschaft so, dass Daten fließen, Prozesse laufen und Sie wieder mit Statistiken statt mit Excel arbeiten."
-      breadcrumb={[{ label: 'Start', href: '/' }, { label: 'Systemintegration' }]}
+      eyebrow="Angebot · Services"
+      title={<>Vertrieb, Einführung und <span className="text-[#2563EB]">Support</span> aus einer Hand.</>}
+      intro="Ein Framework entfaltet seinen Nutzen erst, wenn es im Team ankommt. Deshalb liefern wir nicht nur Lizenzen, sondern Einführung, Schulung und verlässlichen Herstellersupport."
+      breadcrumb={[{ label: 'Start', href: '/' }, { label: 'Services' }]}
     />
 
-    <Section index="01" eyebrow="Domänen" title="Sechs Bereiche, in denen wir Systeme sauber verheiraten.">
+    <Section index="01" eyebrow="Leistungen" title="Sechs Bausteine rund um das Framework.">
       <div className="grid gap-x-14 gap-y-12 md:grid-cols-2 lg:grid-cols-3">
-        {domains.map(([t, d]) => (
+        {leistungen.map(([t, d]) => (
           <div key={t}>
             <h3 className="text-lg font-semibold text-[#0B1220]">{t}</h3>
             <p className="mt-3 text-sm leading-relaxed text-[#5B6B85]">{d}</p>
@@ -45,58 +52,85 @@ const Systemintegration = () => (
       </div>
     </Section>
 
-    <Section index="02" eyebrow="Architektur" title="Wie eine typische Integrationslandschaft aussieht." bg="muted">
-      <div className="grid gap-10 md:grid-cols-12 items-center">
-        <div className="md:col-span-7 border border-[#E6ECF5] bg-white p-4">
-          <img src={architecture} alt="Systemarchitektur" className="w-full h-auto" loading="lazy" width={1200} height={900} />
-        </div>
-        <div className="md:col-span-5 space-y-4 text-sm leading-relaxed text-[#5B6B85]">
+    <SplitSection
+      index="02"
+      eyebrow="Schulung"
+      title="Ihr Team modelliert nach drei Tagen selbstständig."
+      body={
+        <>
           <p>
-            Zentraler Integrations-Layer entkoppelt Quellsysteme (ERP, CRM, Legacy) von Kanälen (Portal, App, Marktplatz).
-            Änderungen an einer Seite betreffen die andere nicht.
+            Unsere Schulungen finden bei Ihnen vor Ort oder remote statt — mit Ihren
+            eigenen Fachdomänen als Übungsmaterial statt mit einem Beispielshop.
           </p>
           <p>
-            Jeder Datenfluss ist beobachtbar: Traces, Fehler-Queues, Wiederanlauf. Ausfälle werden bemerkt, bevor der Kunde
-            anruft.
+            Nach dem Grundlagenkurs kann Ihr Team Modelle erstellen, validieren und
+            generieren. Der Aufbaukurs geht in Template- und DSL-Entwicklung.
           </p>
-        </div>
-      </div>
-    </Section>
+        </>
+      }
+      bullets={[
+        'Grundlagenkurs: 3 Tage, max. 8 Teilnehmende',
+        'Aufbaukurs Generatoren & DSLs: 2 Tage',
+        'Übungen auf Ihrer echten Fachlichkeit',
+      ]}
+      image={training}
+      imageAlt="Trainer erklärt einer Gruppe die Arbeit mit Fachmodellen"
+      bg="muted"
+    />
 
-    <Section index="03" eyebrow="Integrationsmuster" title="Für jedes Problem das passende Muster.">
-      <div className="divide-y divide-[#E6ECF5] border-y border-[#E6ECF5]">
-        {patterns.map(([t, d]) => (
-          <div key={t} className="grid gap-6 md:grid-cols-12 py-8">
-            <div className="md:col-span-4 text-lg font-medium text-[#0B1220]">{t}</div>
-            <div className="md:col-span-8 text-sm leading-relaxed text-[#5B6B85]">{d}</div>
+    <Section index="03" eyebrow="Lizenzmodelle" title="Drei Modelle, transparent kalkulierbar.">
+      <div className="grid gap-6 md:grid-cols-3">
+        {lizenzen.map(([t, d, hinweis]) => (
+          <div key={t} className="flex flex-col border border-[#E6ECF5] bg-white p-8">
+            <h3 className="text-xl font-semibold text-[#0B1220]">{t}</h3>
+            <p className="mt-3 flex-1 text-sm leading-relaxed text-[#5B6B85]">{d}</p>
+            <p className="mt-6 border-t border-[#E6ECF5] pt-4 font-mono text-xs text-[#2563EB]">{hinweis}</p>
           </div>
         ))}
       </div>
     </Section>
 
-    <Section index="04" eyebrow="Betrieb" title="Nach dem Go-Live beginnt die eigentliche Arbeit." bg="muted">
-      <div className="grid gap-8 md:grid-cols-3">
-        {[
-          ['Monitoring', 'End-to-End-Traces über alle Systeme. Alerts an die Verantwortlichen — nicht an alle.'],
-          ['SLA & Support', '9×5 Regelbetrieb bis 24×7 mit Rufbereitschaft. Übergaben mit Runbook, nicht per Wiki-Link.'],
-          ['Weiterentwicklung', 'Quartalsweise Review, kontinuierliche kleine Änderungen, jährliches Architektur-Health-Check.'],
-        ].map(([t, d]) => (
-          <div key={t} className="border border-[#E6ECF5] bg-white p-6">
-            <h3 className="text-base font-semibold text-[#0B1220]">{t}</h3>
-            <p className="mt-3 text-sm leading-relaxed text-[#5B6B85]">{d}</p>
+    <SplitSection
+      index="04"
+      eyebrow="Support"
+      title="Nach dem Rollout beginnt die eigentliche Arbeit."
+      body={
+        <p>
+          Modelle wachsen, Zielplattformen ändern sich, Teams wechseln. Unser Support
+          begleitet diese Bewegung: mit benannten Ansprechpartnern, planbaren Releases
+          und einer LTS-Linie, auf die Sie sich verlassen können.
+        </p>
+      }
+      bullets={[
+        'Benannter Ansprechpartner statt Ticket-Warteschlange',
+        'Migrationshilfen bei jedem Major-Release',
+        'Optionale Sprechstunde alle zwei Wochen',
+      ]}
+      image={support}
+      imageAlt="Support-Team im Gespräch mit Kundinnen und Kunden"
+      imageSide="left"
+    />
+
+    <Section index="05" eyebrow="Service-Level" title="Was wir vertraglich zusagen." bg="muted">
+      <div className="grid gap-6 md:grid-cols-3">
+        {sla.map(([label, wert, detail]) => (
+          <div key={label} className="border border-[#E6ECF5] bg-white p-6">
+            <p className="text-[11px] font-mono uppercase tracking-widest text-[#5B6B85]">{label}</p>
+            <p className="mt-4 font-mono text-2xl text-[#0B1220]">{wert}</p>
+            <p className="mt-2 text-sm leading-relaxed text-[#5B6B85]">{detail}</p>
           </div>
         ))}
       </div>
     </Section>
 
     <CTABand
-      title="Datenchaos in Ihrer Systemlandschaft?"
-      intro="Wir liefern ein Integrations-Audit in 3 Wochen — mit priorisierten Empfehlungen und einer Aufwandsschätzung."
-      primaryLabel="Audit anfragen"
-      secondaryLabel="Beratung ansehen"
-      secondaryTo="/beratung"
+      title="Angebot für Lizenzen und Einführung?"
+      intro="Sagen Sie uns Teamgröße, Zielplattform und Zeitrahmen — Sie erhalten binnen zwei Werktagen ein konkretes Angebot."
+      primaryLabel="Angebot anfordern"
+      secondaryLabel="Plattform ansehen"
+      secondaryTo="/plattform"
     />
   </>
 );
 
-export default Systemintegration;
+export default Services;

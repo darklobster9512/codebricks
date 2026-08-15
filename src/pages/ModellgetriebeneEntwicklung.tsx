@@ -1,46 +1,44 @@
 import PageHero from '@/components/limex/PageHero';
 import Section from '@/components/limex/Section';
+import SplitSection from '@/components/limex/SplitSection';
 import CTABand from '@/components/limex/CTABand';
 import SEO from '@/components/limex/SEO';
+import sketching from '@/assets/photos/sketching-model.jpg';
+import workshop from '@/assets/photos/modeling-workshop.jpg';
 
-const angebote = [
-  ['Web-Anwendungen', 'React, Next.js, TypeScript. Von internen Tools bis zu kundenorientierten Portalen mit hoher Last.'],
-  ['Mobile Apps', 'React Native und native iOS/Android für den Fall, dass Performance und Hardware-Zugriff zählen.'],
-  ['APIs & Backends', 'Node.js, Python, .NET — API-first entworfen, dokumentiert mit OpenAPI und Tests.'],
-  ['Legacy-Modernisierung', 'Sanfte Ablösung monolithischer Systeme durch Strangler-Muster ohne Big-Bang-Risiko.'],
-  ['MVP-Engineering', 'Vom Whiteboard zum Live-Produkt in 8–12 Wochen. Ideal für neue Geschäftsmodelle und Innovationsteams.'],
+const bausteine = [
+  ['Domänenmodellierung', 'Fachbegriffe, Regeln und Zustände werden gemeinsam mit dem Fachbereich erfasst — in einer Sprache, die beide Seiten lesen können.'],
+  ['Domänenspezifische Sprachen', 'Wo ein generisches Modell nicht reicht, entsteht eine eigene DSL: knapp, präzise, auf Ihren Fachbereich zugeschnitten.'],
+  ['Codegenerierung', 'Aus Modell und Templates entstehen Persistenz, Services, Schnittstellen und Oberflächen — reproduzierbar bei jedem Build.'],
+  ['Modell-Validierung', 'Regelverstöße, Lücken und Widersprüche fallen im Modell auf, nicht erst im Integrationstest.'],
+  ['Legacy-Ablösung', 'Bestehende Systeme werden Domäne für Domäne abgelöst — modellbasiert, ohne Big Bang.'],
 ];
 
-const stackGruppen = [
-  ['Frontend', ['TypeScript', 'React', 'Next.js', 'Vue', 'Tailwind', 'Storybook']],
-  ['Backend', ['Node.js', 'NestJS', 'Python', 'FastAPI', '.NET 8', 'Go']],
-  ['Cloud & DevOps', ['AWS', 'Azure', 'GCP', 'Kubernetes', 'Terraform', 'GitHub Actions']],
-  ['Daten', ['PostgreSQL', 'MongoDB', 'Redis', 'Snowflake', 'Kafka', 'dbt']],
+const phasen = [
+  ['01', 'Domänenschnitt', 'Wir schneiden Ihre Fachlichkeit in Domänen und wählen den ersten Kandidaten mit hohem Nutzen und geringem Risiko.'],
+  ['02', 'Modellierung', 'Fachbereich und Entwicklung modellieren gemeinsam. Ergebnis ist ein validiertes, versioniertes Fachmodell.'],
+  ['03', 'Generatorbau', 'Templates werden an Ihre Architektur, Namenskonventionen und Zielplattform angepasst.'],
+  ['04', 'Erster Durchstich', 'Generierter Code läuft in Ihrer Pipeline — mit Tests, Migration und Deployment.'],
+  ['05', 'Skalierung', 'Weitere Domänen folgen. Das Team übernimmt Modellpflege und Generatoren eigenständig.'],
 ];
 
-const modelle = [
-  ['Festpreis', 'Klare Ergebnisse, klarer Preis. Ideal für abgrenzbare Vorhaben mit definiertem Umfang.', 'Empfehlung ab 6 Wochen'],
-  ['Time & Material', 'Wöchentliche Abrechnung nach tatsächlichem Aufwand. Ideal für explorative Phasen und laufende Weiterentwicklung.', 'Ab 3 Personentagen / Woche'],
-  ['Dediziertes Team', 'Ein festes Team ausschließlich für Sie. Kapazität von 3 bis 8 Engineers.', 'Ab 6 Monate Laufzeit'],
-];
-
-const Softwareentwicklung = () => (
+const ModellgetriebeneEntwicklung = () => (
   <>
     <SEO
-      title="Softwareentwicklung | LIMEX Solutions"
-      description="Individuelle Softwareentwicklung: Webplattformen, APIs, mobile Apps und interne Tools — sauber, wartbar, langfristig tragfähig."
-      path="/softwareentwicklung"
+      title="Modellgetriebene Entwicklung | Codebricks GmbH"
+      description="Modellgetriebene Softwareentwicklung in der Praxis: Domänenmodelle, eigene DSLs, Codegenerierung und die schrittweise Ablösung von Altsystemen."
+      path="/modellgetriebene-entwicklung"
     />
     <PageHero
-      eyebrow="Leistung · Softwareentwicklung"
-      title={<>Individualsoftware, die <span className="text-[#2563EB]">genau passt</span>.</>}
-      intro="Standardsoftware hat ihre Grenzen. Dort, wo Ihr Wettbewerbsvorteil sitzt, sollten Sie eigenständige Software besitzen — sauber gebaut, dokumentiert und übergabefähig."
-      breadcrumb={[{ label: 'Start', href: '/' }, { label: 'Softwareentwicklung' }]}
+      eyebrow="Methode · MDD"
+      title={<>Fachlichkeit modellieren statt <span className="text-[#2563EB]">Code kopieren</span>.</>}
+      intro="Modellgetriebene Entwicklung verlagert die Arbeit dorthin, wo sie hingehört: in die Fachlichkeit. Der repetitive Teil — Schema, Schnittstellen, Validierung, Gerüste — entsteht automatisch."
+      breadcrumb={[{ label: 'Start', href: '/' }, { label: 'Modellgetriebene Entwicklung' }]}
     />
 
-    <Section index="01" eyebrow="Angebote" title="Von der API bis zur nutzerorientierten Oberfläche.">
+    <Section index="01" eyebrow="Bausteine" title="Fünf Disziplinen, die MDD im Alltag tragfähig machen.">
       <div className="grid gap-x-14 gap-y-12 md:grid-cols-2">
-        {angebote.map(([t, d]) => (
+        {bausteine.map(([t, d]) => (
           <div key={t}>
             <h3 className="text-xl font-semibold text-[#0B1220]">{t}</h3>
             <p className="mt-3 text-sm leading-relaxed text-[#5B6B85]">{d}</p>
@@ -49,68 +47,78 @@ const Softwareentwicklung = () => (
       </div>
     </Section>
 
-    <Section index="02" eyebrow="Tech-Stack" title="Werkzeuge, mit denen wir seit Jahren produktiv liefern." bg="muted">
-      <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-4">
-        {stackGruppen.map(([gruppe, items]) => (
-          <div key={gruppe as string} className="border border-[#E6ECF5] bg-white p-6">
-            <p className="text-[11px] font-mono uppercase tracking-widest text-[#2563EB]">{gruppe as string}</p>
-            <ul className="mt-4 space-y-2">
-              {(items as string[]).map((i) => (
-                <li key={i} className="text-sm text-[#0B1220]">{i}</li>
-              ))}
-            </ul>
+    <SplitSection
+      index="02"
+      eyebrow="Zusammenarbeit"
+      title="Fachbereich und Entwicklung an einem Modell."
+      body={
+        <>
+          <p>
+            Das Fachmodell ist die gemeinsame Sprache. Es ersetzt die Anforderungstabelle,
+            die niemand pflegt, und das Architekturbild, das nach drei Sprints veraltet ist.
+          </p>
+          <p>
+            In moderierten Modellierungssitzungen entstehen Begriffe, Regeln und Zustände —
+            direkt maschinenlesbar erfasst, nicht als Protokoll im Anhang.
+          </p>
+        </>
+      }
+      bullets={[
+        'Workshops mit Fachbereich, Architektur und Entwicklung',
+        'Jede Regel ist im Modell nachweisbar hinterlegt',
+        'Änderungen sind reviewbar wie Code — inklusive Diff',
+      ]}
+      image={workshop}
+      imageAlt="Team in einem Modellierungsworkshop mit Notizzetteln und Laptops"
+      bg="muted"
+    />
+
+    <Section index="03" eyebrow="Vorgehen" title="Fünf Phasen bis zum produktiven Durchstich.">
+      <div className="grid gap-6 md:grid-cols-5">
+        {phasen.map(([n, t, d]) => (
+          <div key={n} className="border border-[#E6ECF5] bg-white p-6">
+            <p className="font-mono text-xs text-[#2563EB]">{n}</p>
+            <h3 className="mt-4 text-base font-semibold text-[#0B1220]">{t}</h3>
+            <p className="mt-2 text-sm leading-relaxed text-[#5B6B85]">{d}</p>
           </div>
         ))}
       </div>
     </Section>
 
-    <Section index="03" eyebrow="Delivery-Modelle" title="Drei Modelle, ein transparenter Rahmen.">
-      <div className="grid gap-6 md:grid-cols-3">
-        {modelle.map(([t, d, hinweis]) => (
-          <div key={t} className="flex flex-col border border-[#E6ECF5] p-8 bg-white">
-            <h3 className="text-xl font-semibold text-[#0B1220]">{t}</h3>
-            <p className="mt-3 flex-1 text-sm leading-relaxed text-[#5B6B85]">{d}</p>
-            <p className="mt-6 border-t border-[#E6ECF5] pt-4 font-mono text-xs text-[#2563EB]">{hinweis}</p>
-          </div>
-        ))}
-      </div>
-    </Section>
-
-    <Section index="04" eyebrow="Fallbeispiel" title="Modernisierung eines ERP-Portals im Finanzsektor." bg="muted">
-      <div className="grid gap-10 md:grid-cols-12">
-        <div className="md:col-span-8 space-y-4 text-base leading-relaxed text-[#5B6B85]">
+    <SplitSection
+      index="04"
+      eyebrow="Fallbeispiel"
+      title="Antragsstrecke eines Finanzdienstleisters."
+      body={
+        <>
           <p>
-            Ein Bestandskunde betrieb ein 14 Jahre altes Kundenportal auf einer .NET-Framework-Basis. Kernprobleme: Ladezeiten
-            über 2 Sekunden, keine mobile Nutzung, ein SAP-Adapter, der nur nachts synchronisierte.
+            Ein Bestandskunde pflegte 40 Antragsvarianten in handgeschriebenem Code —
+            jede Regeländerung berührte Formular, Validierung, Persistenz und Reporting.
           </p>
           <p>
-            Wir haben das Portal in einem Strangler-Ansatz auf React und .NET 8 migriert, die SAP-Anbindung auf Event-basierte
-            Deltas umgestellt und ein Design-System eingeführt. Live-Gang nach 5 Monaten, ohne Betriebsstillstand.
+            Mit einer eigenen DSL für Antragsregeln werden alle vier Ebenen aus einem
+            Modell erzeugt. Eine neue Variante entsteht heute in Stunden statt in Wochen.
           </p>
-        </div>
-        <div className="md:col-span-4 grid gap-4">
-          {[
-            ['0,6 s', 'Median-Ladezeit'],
-            ['−72 %', 'Support-Tickets'],
-            ['5 Monate', 'Time-to-Production'],
-          ].map(([n, l]) => (
-            <div key={l} className="border border-[#E6ECF5] bg-white p-5">
-              <p className="font-mono text-2xl text-[#0B1220]">{n}</p>
-              <p className="mt-1 text-xs uppercase tracking-widest text-[#5B6B85]">{l}</p>
-            </div>
-          ))}
-        </div>
-      </div>
-    </Section>
+        </>
+      }
+      bullets={[
+        '40 Antragsvarianten aus einem Modell generiert',
+        'Regeländerung: von 3 Wochen auf 2 Tage',
+        'Keine Abweichung mehr zwischen Formular und Prüfung',
+      ]}
+      image={sketching}
+      imageAlt="Entwickler skizziert ein Datenmodell auf Papier neben einem Laptop"
+      imageSide="left"
+    />
 
     <CTABand
-      title="Sie haben ein Softwareprojekt im Kopf?"
-      intro="Wir prüfen technische Machbarkeit, Aufwand und Alternativen in einem 60-minütigen Assessment."
+      title="Passt MDD zu Ihrer Domäne?"
+      intro="In einem 60-minütigen Assessment schauen wir uns Ihre Fachlichkeit an und sagen ehrlich, wo Modellierung trägt — und wo nicht."
       primaryLabel="Assessment anfragen"
-      secondaryLabel="Systemintegration"
-      secondaryTo="/systemintegration"
+      secondaryLabel="Services & Lizenzen"
+      secondaryTo="/services"
     />
   </>
 );
 
-export default Softwareentwicklung;
+export default ModellgetriebeneEntwicklung;
