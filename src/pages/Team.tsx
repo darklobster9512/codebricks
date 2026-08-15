@@ -180,7 +180,7 @@ const Team = () => (
     <PageHero
       eyebrow="Unternehmen · Team"
       title={<>Die Menschen hinter <span className="text-[#2563EB]">Codebricks</span>.</>}
-      intro="Seit 2013 arbeiten wir aus Berlin heraus an IT-Beratung, Softwareentwicklung und Systemintegration. Sechs Bereiche, klare Zuständigkeiten — und immer ein Name statt einer Ticketnummer."
+      intro="Wir entwickeln in Berlin Frameworks und Werkzeuge für die modellgetriebene Softwareentwicklung. Sechs Bereiche, klare Zuständigkeiten — und immer ein Name statt einer Ticketnummer."
       breadcrumb={[{ label: 'Start', href: '/' }, { label: 'Team' }]}
     />
 
