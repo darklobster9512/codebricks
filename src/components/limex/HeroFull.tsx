@@ -14,7 +14,7 @@ const HeroFull = () => {
         {/* Background image */}
         <img
           src={heroImage}
-          alt="Das Codebricks-Team im Berliner Büro bei der Arbeit an einem Domänenmodell"
+          alt="Entwicklungsteam von Codebricks im Berliner Büro"
           className="absolute inset-0 h-full w-full object-cover object-center select-none"
           width={960}
           height={640}

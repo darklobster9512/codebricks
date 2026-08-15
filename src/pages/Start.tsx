@@ -103,7 +103,7 @@ const Start = () => (
       linkTo="/modellgetriebene-entwicklung"
       linkLabel="Methode ansehen"
       image={modelingWorkshop}
-      imageAlt="Team modelliert gemeinsam eine Fachdomäne an einer Wand mit Notizen"
+      imageAlt="Entwicklerin skizziert ein Fachmodell an einem Whiteboard"
       bg="muted"
     />
 
@@ -170,7 +170,7 @@ const Start = () => (
         'Benannter Ansprechpartner statt Ticket-Warteschlange',
       ]}
       image={teamDesk}
-      imageAlt="Entwicklungsteam von Codebricks am gemeinsamen Arbeitstisch in Berlin"
+      imageAlt="Zwei Entwickler arbeiten gemeinsam an Modellen am Bildschirm"
       bg="muted"
     />
 

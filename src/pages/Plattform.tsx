@@ -70,7 +70,7 @@ const Plattform = () => (
         'Generierte Migrationen statt manueller SQL-Skripte',
       ]}
       image={codeLaptop}
-      imageAlt="Entwicklerin arbeitet an generiertem Quellcode auf einem Laptop"
+      imageAlt="Laptop mit generiertem Quellcode auf einem Entwicklerarbeitsplatz"
       bg="muted"
     />
 
