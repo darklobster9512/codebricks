@@ -61,8 +61,8 @@ const Footer = () => (
               <a href="mailto:kontakt@codebricks-gmbh.de" className="block text-white/85 hover:text-white">
                 kontakt@codebricks-gmbh.de
               </a>
-              <a href="tel:+4930123456789" className="block text-white/85 hover:text-white">
-                030 123456789
+              <a href="tel:+4930692096720" className="block text-white/85 hover:text-white">
+                030 692096720
               </a>
             </div>
           </div>

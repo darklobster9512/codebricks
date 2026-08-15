@@ -39,7 +39,7 @@ const Impressum = () => (
         <div>
           <h2 className="text-[11px] font-mono uppercase tracking-widest text-[#3B82F6]">Kontakt</h2>
           <p className="mt-3">
-            Telefon: 030 123456789<br />
+            Telefon: 030 692096720<br />
             E-Mail: <a href="mailto:kontakt@codebricks-gmbh.de" className="text-[#3B82F6] hover:underline">kontakt@codebricks-gmbh.de</a><br />
             Web: <a href="https://codebricks.gmbh" className="text-[#3B82F6] hover:underline">https://codebricks.gmbh</a>
           </p>
