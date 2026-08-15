@@ -20,14 +20,13 @@ const HeroFull = () => {
           <div className="tile md:col-span-4 p-8 lg:p-12">
             <span className="chip">Codebricks GmbH · Berlin</span>
             <h1 className="mt-7 font-display text-[40px] font-semibold leading-[1.02] tracking-[-0.035em] text-[#0F1B3D] sm:text-[52px] lg:text-[64px]">
-              Software entsteht aus dem{' '}
-              <span className="text-[#3B82F6]">Modell</span>, nicht aus Copy-Paste.
+              Wir bauen die Werkzeuge, die{' '}
+              <span className="text-[#3B82F6]">Ihren Code schreiben</span>.
             </h1>
             <p className="mt-7 max-w-xl text-[17px] leading-relaxed text-[#64748B]">
-              Wir entwickeln Frameworks und Werkzeuge für die modellgetriebene
-              Softwareentwicklung: fachliche Modelle, eigene DSLs und Generatoren, aus
-              denen produktionsreifer Code entsteht — inklusive Lizenzen, Einführung
-              und Support.
+              Modelle, eigene DSLs und Generatoren, aus denen produktionsreifer Code
+              entsteht — als Plattform mit Lizenz, Einführung und Hersteller-Support
+              aus Berlin.
             </p>
             <div className="mt-9 flex flex-wrap gap-3">
               <Link
