@@ -65,7 +65,7 @@ const bereiche: Bereich[] = [
       'Ein Beratungshaus ist nur so gut wie die Leute, die morgens beim Kunden sitzen. Dieser Bereich kümmert sich um genau die.',
     people: [
       {
-        name: 'Philipp Radtke',
+        name: 'Tobias Lindner',
         role: 'Leiter People & Culture',
         focus: 'Entwicklung, Feedback, Weiterbildung',
         text: 'Verantwortet Entwicklungspfade, Feedbackzyklen und das Weiterbildungsbudget jedes Teammitglieds — vom Werkstudenten bis zur Bereichsleitung.',
