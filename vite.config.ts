@@ -9,7 +9,13 @@ export default defineConfig(() => ({
     hmr: {
       overlay: false,
     },
-    allowedHosts: ["codebricks.gmbh", "www.codebricks.gmbh", ".lovable.app"],
+    allowedHosts: [
+      "codebricks.gmbh",
+      "www.codebricks.gmbh",
+      "codebricks.solutions",
+      "www.codebricks.solutions",
+      ".lovable.app",
+    ],
   },
   plugins: [react()],
   resolve: {
