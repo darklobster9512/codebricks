@@ -96,7 +96,7 @@ const Kontakt = () => {
                   </div>
                   <div className="flex gap-3">
                     <Mail size={18} className="text-[#64748B] mt-0.5 shrink-0" />
-                    <a href="mailto:kontakt@codebricks-gmbh.de" className="text-[#0F1B3D] hover:text-[#3B82F6]">kontakt@codebricks-gmbh.de</a>
+                    <a href="mailto:kontakt@codebricks-gmbh.com" className="text-[#0F1B3D] hover:text-[#3B82F6]">kontakt@codebricks-gmbh.com</a>
                   </div>
                   <div className="flex gap-3">
                     <Phone size={18} className="text-[#64748B] mt-0.5 shrink-0" />

@@ -74,7 +74,7 @@ const KarriereDetail = () => {
                 >
                   Jetzt bewerben <ArrowRight size={16} />
                 </Link>
-                <p className="text-xs text-[#64748B]">Direkter Ansprechpartner: <a href="mailto:kontakt@codebricks-gmbh.de" className="text-[#3B82F6] hover:underline">kontakt@codebricks-gmbh.de</a></p>
+                <p className="text-xs text-[#64748B]">Direkter Ansprechpartner: <a href="mailto:kontakt@codebricks-gmbh.com" className="text-[#3B82F6] hover:underline">kontakt@codebricks-gmbh.com</a></p>
               </div>
             </aside>
           </div>

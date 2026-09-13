@@ -1,5 +1,7 @@
 import { Helmet } from "react-helmet-async";
 
+const SITE_URL = "https://codebricks-gmbh.com";
+
 interface SEOProps {
   title: string;
   description: string;
@@ -10,7 +12,8 @@ interface SEOProps {
 }
 
 const SEO = ({ title, description, path, brand = true, noindex = false }: SEOProps) => {
-  const canonical = path ?? (typeof window !== "undefined" ? window.location.pathname : "/");
+  const pathname = path ?? (typeof window !== "undefined" ? window.location.pathname : "/");
+  const canonical = new URL(pathname, SITE_URL).toString();
   const fullTitle = brand ? `${title} | Codebricks` : title;
   return (
     <Helmet>

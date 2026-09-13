@@ -58,8 +58,8 @@ const Footer = () => (
               10117 Berlin
             </address>
             <div className="mt-4 space-y-1 text-sm">
-              <a href="mailto:kontakt@codebricks-gmbh.de" className="block text-white/85 hover:text-white">
-                kontakt@codebricks-gmbh.de
+              <a href="mailto:kontakt@codebricks-gmbh.com" className="block text-white/85 hover:text-white">
+                kontakt@codebricks-gmbh.com
               </a>
               <a href="tel:+4930692096720" className="block text-white/85 hover:text-white">
                 030 692096720
