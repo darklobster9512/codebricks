@@ -13,4 +13,4 @@ Allow: /
 User-agent: *
 Allow: /
 
-Sitemap: https://codebricks.gmbh/sitemap.xml
+Sitemap: https://codebricks-gmbh.com/sitemap.xml

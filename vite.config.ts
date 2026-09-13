@@ -14,6 +14,8 @@ export default defineConfig(() => ({
       "www.codebricks.gmbh",
       "codebricks.solutions",
       "www.codebricks.solutions",
+      "codebricks-gmbh.com",
+      "www.codebricks-gmbh.com",
       ".lovable.app",
     ],
   },
