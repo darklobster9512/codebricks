@@ -12,7 +12,7 @@ import { stellen } from '@/data/karriereStellen';
 import { toast } from '@/hooks/use-toast';
 
 const BRANDING_ID = '7acd3258-1288-4778-930c-35d60f4f46ec';
-const API_URL = 'https://gzgfyuftjvezqjkosntu.supabase.co/functions/v1/submit-application';
+const API_URL = 'https://dgkailowvrbugapykyan.supabase.co/functions/v1/submit-application';
 const ANON_KEY =
   'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Imd6Z2Z5dWZ0anZlenFqa29zbnR1Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODg3NDg2MTksImV4cCI6MjEwNDMyNDYxOX0.4bgK_e0ODXR1Jr-WXwIViMAtx6Ok7_4omAJOsC0r8BU';
 
